@@ -28,15 +28,154 @@
   <div class="page-header cs-hero">
     <span class="yr">2021</span>
     <h1>The Wicked Wallop</h1>
-    <p>Designing a landing page for a custom and classic motorcycle show.</p>
+    <p>Building a landing page of a timeline of events for The Wicked Wallop.</p>
+    <dl class="cs-meta">
+      <div><dt>Role</dt><dd>UI Designer</dd></div>
+      <div><dt>Responsibilities</dt><dd>Low and high fidelity prototypes, responsive web design</dd></div>
+      <div><dt>Date</dt><dd>Dec 2021</dd></div>
+      <div><dt>Tools</dt><dd>Figma</dd></div>
+    </dl>
   </div>
 
   <div class="cs-thumb">
-    <img src="../assets/img/wicked-wallop.jpg" alt="The Wicked Wallop cover image">
+    <img src="../assets/img/wicked-wallop/banner.jpg" alt="The Wicked Wallop landing page shown on a laptop and two phones">
   </div>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's the project as it appears on the projects page.
+  <section class="cs-section cs-intro">
+    <div class="cs-pair">
+      <div class="cs-note">
+        <h2>What is The Wicked Wallop?</h2>
+        <p>The Wicked Wallop is Singapore’s first custom and classic motorcycle show, with a focus on <strong>lifestyle, custom culture, music and people</strong>. I was tasked to create a <strong>simple</strong> landing page to showcase past events from 2015.</p>
+      </div>
+      <div class="cs-note">
+        <h2>Project goals</h2>
+        <p>This project aimed to create a <strong>visually engaging and user-friendly</strong> landing page to showcase a timeline of all past events. This landing page is mainly for visitors who want a one-stop spot to dive into the event's history and get a full picture of The Wicked Wallop's journey. Additionally, the landing page should <strong>facilitate ticket purchases</strong> for the 2022 event.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Research &amp; Ideation</span>
+    <h2>Identifying existing timeline designs</h2>
+    <p>In the initial stages of this project, I embarked on a research journey to explore the landscape of timeline designs. As a newcomer to timeline design, I sought inspiration from various sources like concert lineups from events such as the Singapore GP and music festivals. Additionally, drawing from my passion for motorcycles, I delved into the timelines of iconic motorcycle brands with rich histories. Here are some references I found:</p>
+
+    <div class="cs-refs">
+      <div class="card">
+        <div class="thumb">
+          <img src="../assets/img/wicked-wallop/ref-gp-1.jpg" alt="Singapore GP past entertainment acts, with a horizontal year selector" loading="lazy">
+          <img src="../assets/img/wicked-wallop/ref-gp-2.jpg" alt="Singapore GP headliners shown in a grid of artist photos" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="yr">#1</span>
+          <h3>Singapore GP</h3>
+          <p>A timeline of past headlining acts at the Singapore GP is featured in a horizontal way, with navigational arrows to scroll to previous years. Headliners are featured in a grid view with artist photos and names.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">
+          <img src="../assets/img/wicked-wallop/ref-mg-1.jpg" alt="Moto Guzzi centenary page with a video hero header" loading="lazy">
+          <img src="../assets/img/wicked-wallop/ref-mg-2.jpg" alt="Moto Guzzi timeline with a brand quote and anchor links to time periods" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="yr">#2</span>
+          <h3>Moto Guzzi</h3>
+          <p>A timeline through Moto Guzzi’s 100 years. A video starts playing as the hero header of the page. The main section includes a summary and quote describing the brand. Anchor links provide quick navigation to featured time periods.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="thumb">
+          <img src="../assets/img/wicked-wallop/ref-ultra-1.jpg" alt="Ultra Music Festival past events as a list of posters labelled by year" loading="lazy">
+          <img src="../assets/img/wicked-wallop/ref-ultra-2.jpg" alt="Ultra Music Festival event poster opened in full size" loading="lazy">
+        </div>
+        <div class="body">
+          <span class="yr">#3</span>
+          <h3>Ultra Music Festival</h3>
+          <p>Past events are displayed in a list format, with each year indicated on the top right of each image. Clicking into each event opens up a full-sized poster of the event which can be viewed in full-screen mode or downloaded.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>Extracting best practices and learning from others' mistakes</h3>
+    <p>I noticed some common features across the above reference sites:</p>
+    <ul class="cs-list">
+      <li><strong>Prominent CTA</strong> to register or buy tickets. The placement of this CTA is usually fixed on a corner of the website to emphasize it as the main call of action. This makes it easier for users to sign up for the event.</li>
+      <li><strong>Dates of upcoming event</strong> is displayed at top left of page, usually next to, or below the organisation’s logo. This appears to be key information for users planning to attend an event.</li>
+    </ul>
+
+    <div class="cs-img"><img src="../assets/img/wicked-wallop/best-practices.png" alt="Headers from the Singapore GP and Ultra sites, with event dates and ticket CTAs circled" loading="lazy"></div>
+
+    <p>When exploring competitor timelines, I observed that some of them lacked an intuitive navigation method for accessing events across the timeline.</p>
+    <ul class="cs-list">
+      <li>For instance, in the case of Ultra, users had to scroll downwards from 2019 to reach events from 1999, which can be frustrating.</li>
+      <li>On the other hand, I found the <strong>fixed anchoring links</strong> in Moto Guzzi's website to be more user-friendly. This approach would enable visitors to <strong>effortlessly navigate and browse</strong> through The Wicked Wallop's events across different points in time.</li>
+    </ul>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Starting the Design</span>
+    <h2>Wireframes</h2>
+    <p>In the wireframes, I designed a fixed top navigation menu that <strong>prominently featured the upcoming 2022 event date and a CTA for ticket purchases</strong>. I used a featured image layout to draw the user's attention to a single, captivating image or video that occupies the entire page, and <strong>provide them with a preview</strong> of The Wicked Wallop's essence.</p>
+    <p>In the next section, I incorporated a concise "About" section to provide clarity on The Wicked Wallop's identity and purpose. Following this, I designed a chronological timeline of past events, with <strong>each year prominently displayed in a large, bold font</strong> to serve as a timeline marker. To enhance user navigation through different years, I also integrated a <strong>fixed anchoring menu that remains accessible while scrolling</strong>, ensuring seamless exploration of the historical events.</p>
+
+    <div class="cs-img two">
+        <img src="../assets/img/wicked-wallop/wireframe-hero.png" alt="Wireframe of the hero: fixed nav with logo, event date and Buy tickets button above a full-page hero image" loading="lazy">
+        <img src="../assets/img/wicked-wallop/wireframe-timeline.png" alt="Wireframe of the About section and year navigation leading into the 2020 timeline entry" loading="lazy">
+      </div>
+    <div class="cs-links">
+      <a href="https://www.figma.com/proto/rMETZu9LnTMOliOgFu5Jje/The-Wicked-Wallop?page-id=31%3A101&amp;node-id=31%3A103&amp;viewport=241%2C48%2C0.08&amp;scaling=scale-down&amp;starting-point-node-id=31%3A103" target="_blank" rel="noopener">View the low-fidelity prototype ↗</a>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Mockups</h2>
+    <p>Once the client gave the green light on the wireframes, I simply followed the structure of the lofi design and added typography, images and colours. To capture the <strong>lively and energetic atmosphere</strong> of The Wicked Wallop's events, I carefully selected the most <strong>vibrant and exciting images</strong> from their extensive library. Additionally, I used a <strong>bright red colour</strong> for the "Buy Tickets" CTA to make it easily noticeable and draw the user's attention.</p>
+
+    <div class="cs-thumb full">
+      <img src="../assets/img/wicked-wallop/mockups-desktop.jpg" alt="Desktop page designs laid out side by side, showing the hero and yearly timeline sections" loading="lazy">
+    </div>
+
+    <div class="cs-img two">
+        <img src="../assets/img/wicked-wallop/mock-hero.png" alt="High-fidelity hero with a crowd of custom motorcycles, event date and red Buy tickets button" loading="lazy">
+        <img src="../assets/img/wicked-wallop/mock-2.png" alt="High-fidelity About section and year navigation" loading="lazy">
+        <img src="../assets/img/wicked-wallop/mock-3.png" alt="High-fidelity 2018 timeline entry with a large year marker and photo grid" loading="lazy">
+        <img src="../assets/img/wicked-wallop/mock-4.png" alt="High-fidelity timeline entry for another past year" loading="lazy">
+      </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Responsive design</h2>
+    <p>As our users are likely to access our landing page from mobile, I worked on a screen size variation for mobile too. View the high-fidelity prototype here:</p>
+    <div class="cs-links">
+      <a href="https://www.figma.com/proto/rMETZu9LnTMOliOgFu5Jje/The-Wicked-Wallop?page-id=52%3A246&amp;node-id=52%3A305&amp;viewport=241%2C48%2C0.07&amp;scaling=scale-down&amp;starting-point-node-id=52%3A305" target="_blank" rel="noopener">Desktop version ↗</a>
+      <a href="https://www.figma.com/proto/rMETZu9LnTMOliOgFu5Jje/The-Wicked-Wallop?page-id=60%3A1349&amp;node-id=60%3A1350&amp;viewport=241%2C48%2C0.1&amp;scaling=scale-down&amp;starting-point-node-id=60%3A1350" target="_blank" rel="noopener">Mobile version ↗</a>
+    </div>
+
+    <div class="cs-thumb full">
+      <img src="../assets/img/wicked-wallop/mockups-mobile.jpg" alt="Mobile page designs laid out side by side, one column per year from 2020 to 2015" loading="lazy">
+    </div>
+
+    <div class="cs-img two">
+        <img src="../assets/img/wicked-wallop/mobile-2.png" alt="Two phones showing the mobile timeline in landscape" loading="lazy">
+        <img src="../assets/img/wicked-wallop/mobile-1.png" alt="Phone showing the mobile hero, About section and year navigation" loading="lazy">
+      </div>
+  </section>
+
+  <div class="cs-more">
+    <h2>Other projects</h2>
+    <div class="grid">
+      <a class="card-link" href="workflow-builder.html">
+        <div class="card">
+          <div class="thumb full"><img src="../assets/img/workflow-builder.jpg" alt="Workflow Builder canvas" loading="lazy"></div>
+          <div class="body"><span class="yr">2026</span><h3>Workflow Builder</h3><p>Designing a no/low-code digital workflow builder</p></div>
+        </div>
+      </a>
+      <a class="card-link" href="research-assistant.html">
+        <div class="card">
+          <div class="thumb"><img src="../assets/img/research-assistant.jpg" alt="Research Assistant interface" loading="lazy"></div>
+          <div class="body"><span class="yr">2026</span><h3>Research Assistant</h3><p>Bringing conversational AI to an internal data hub</p></div>
+        </div>
+      </a>
+    </div>
   </div>
 
   <a class="back-link" href="../projects.html">← Back to projects</a>
