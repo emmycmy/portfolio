@@ -29,14 +29,152 @@
     <span class="yr">2023</span>
     <h1>ANTlabs dashboard</h1>
     <p>Introducing monitoring and management functions for ANTlabs’ centralised dashboard.</p>
+    <dl class="cs-meta">
+      <div><dt>Role</dt><dd>Lead UX/UI Designer</dd></div>
+      <div><dt>Responsibilities</dt><dd>Sitemapping, lofi wireframing, hifi mockups</dd></div>
+      <div><dt>Date</dt><dd>Mar – Jul 2023</dd></div>
+      <div><dt>Tools</dt><dd>Adobe XD, Miro</dd></div>
+    </dl>
   </div>
 
-  <div class="cs-thumb">
-    <img src="../assets/img/antlabs.jpg" alt="ANTlabs dashboard cover image">
+  <div class="cs-stage">
+    <img src="../assets/img/antlabs/hero.png" alt="Three laptops showing the casting overview, casting dashboard and room devices pages">
   </div>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's the project as it appears on the projects page.
+  <section class="cs-section">
+    <h2>A new screen casting service</h2>
+    <p>ANTlabs is a company that provides technology solutions for businesses to manage their network infrastructure and provide internet access to their customers and guests. They focus on providing solutions for the <strong>hospitality industry</strong>, which includes hotels, resorts, and other hospitality businesses. Their product, ANTlabs Service Platform (ASP), a <strong>WiFi-as-a-Service platform</strong>, allows these businesses to take control of their WiFi service offerings across multiple organisations and sites with a <strong>centralised dashboard</strong>.</p>
+    <p>The client was introducing a new screen casting offering to the existing interface of ASP. I was given the opportunity to propose and design the new pages of this screen casting service management. The design should:</p>
+    <ul class="cs-list">
+      <li>Allow guests to securely/seamlessly <strong>connect their personal devices</strong> to stream their own content on the inroom TV.</li>
+      <li>Allow businesses to <strong>deploy chromecast devices and manage them</strong> across different rooms easily.</li>
+      <li>Provide <strong>monitoring and management functions</strong> to help businesses ensure service quality and proactive troubleshooting/service recovery of any casting issues.</li>
+    </ul>
+  </section>
+
+  <section class="cs-section">
+    <h2>Reorganising the sitemap</h2>
+    <p>With the addition of a new casting service, it was expected that there would be at least 8 new pages to create. These relate to the casting functionality itself, and its corresponding reports. I studied the existing product and spent some time understanding the information under each menu, before deciding to reorganise it.</p>
+    <p>The first change I made was to <strong>separate the Sites and Services pages by introducing a new category called <em>Service Management</em> to the primary navigation.</strong> Previously, content such as <em>Bandwidth</em> and <em>VLAN</em>, which pertained to the other High Speed Internet and Web Filtering services, was grouped together with the remaining site management pages, all labeled under <em>Site Management</em>. This arrangement not only caused confusion for users but also threatened to overcrowd and burden the menu if we were to include the <em>Casting</em> pages within the same category.</p>
+    <div class="cs-img sm"><img src="../assets/img/antlabs/sitemap-services.jpg" alt="Sitemap: Site Management and a new Services Management branch with High Speed Internet, Web Filtering and Casting pages" loading="lazy"></div>
+    <p>Next, I discussed with ANTlabs on the type of reporting content they needed me to design. The content ranged from tables, charts, and logs. In their existing product, all such content fell under one label “Reports &amp; Analytics”. It was already a very long menu, so I decided to <strong>break it up into subcategories according to the type of service</strong> to make it easier for the user to find what they need. I also <strong>separated these reports by content type</strong> - detailed records (logs) and overview pages (charts), so that different types of users can quickly access the different types of information they need. For example, an IT manager would likely need to see the raw data in the logs, while a General Manager may prefer to get a quick overview by reviewing data in charts.</p>
+    <div class="cs-img sm"><img src="../assets/img/antlabs/sitemap-reports.jpg" alt="Sitemap: Reports &amp; Analytics split into subcategories by service, each with log and overview pages" loading="lazy"></div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Addressing existing usability issues</h2>
+    <p>As I moved into the design stage, I made changes to fix usability issues I found while studying their existing product. I focused on making user interactions smoother, navigation easier, and the overall interface more intuitive.</p>
+
+    <div class="cs-issue">
+      <span class="yr issue">Issue 01</span>
+      <h3>Inaccessible content on smaller screens</h3>
+      <ul class="cs-list">
+        <li>There were hidden columns that could not be accessed by users on smaller screens sizes.</li>
+      </ul>
+      <div class="cs-img narrow"><img class="soft" src="../assets/img/antlabs/issue-columns.jpg" alt="Existing site details table with the rightmost column cut off at the screen edge, highlighted in red" loading="lazy"></div>
+      <div class="cs-rec">
+        <span class="yr rec">Solution</span>
+        <h4>Introducing column selectors</h4>
+        <p>I designed a column sector to allow users to <strong>customise the data</strong> they view, focusing on the specific metrics or information that are most relevant to their tasks or objectives. This <strong>flexibility</strong> enhances user experience by <strong>tailoring the dashboard to individual needs.</strong></p>
+        <div class="cs-img sm"><img src="../assets/img/antlabs/solution-columns.jpg" alt="Columns dropdown with a checkbox for each table column" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="cs-issue">
+      <span class="yr issue">Issue 02</span>
+      <h3>No indication of user's present location</h3>
+      <ul class="cs-list">
+        <li>The page title is not updated when user switches to a different group/organisation.</li>
+        <li>Furthermore, when the site selector menu is collapsed, the user is not able to see the applied filters ie. they will not know which group or organisation the info comes from.</li>
+      </ul>
+      <div class="cs-img"><img src="../assets/img/antlabs/issue-location.jpg" alt="Three screenshots of the existing site list showing filters only in the left panel, an unchanged page title, and a collapsed selector hiding the filters" loading="lazy"></div>
+      <div class="cs-rec">
+        <span class="yr rec">Solution</span>
+        <h4>More emphasis on current page</h4>
+        <p><strong>I enhanced the breadcrumb design</strong> by giving the current page greater prominence through the use of a heavier font weight. I also made sure that each page had their individual titles.</p>
+        <div class="cs-img sm"><img src="../assets/img/antlabs/solution-breadcrumb.jpg" alt="Redesigned page header with a bolder current breadcrumb and its own page title" loading="lazy"></div>
+      </div>
+    </div>
+
+    <div class="cs-issue">
+      <span class="yr issue">Issue 03</span>
+      <h3>Poorly positioned buttons</h3>
+      <ul class="cs-list">
+        <li>In the table listing pages, the CTAs are located at the bottom of the page. These include important buttons like “Add Site”, “Download”, “Add Site Group”, etc.</li>
+        <li>It can be frustrating if the user is unable to find the CTA and is unable to take the specific action that they need.</li>
+      </ul>
+      <div class="cs-img narrow"><img class="soft" src="../assets/img/antlabs/issue-ctas.jpg" alt="Existing table page with Add Site and Download buttons at the bottom, highlighted in red" loading="lazy"></div>
+      <div class="cs-rec">
+        <span class="yr rec">Solution</span>
+        <h4>Repositioning of primary CTAs</h4>
+        <p>Considering the users' goals and context of the content they are engaging with, I relocated the primary CTAs to the page's upper section. This adjustment ensures that users can promptly understand the required action.</p>
+        <div class="cs-img sm"><img src="../assets/img/antlabs/solution-ctas.jpg" alt="Redesigned table page with Add New and Download buttons in the top right" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Wireframing the casting pages</h2>
+    <p>Following the sitemap I created earlier, I worked on designing the new pages that would be needed for the new screen casting feature. Here are some of the lofi wireframes.</p>
+
+    <h3>Casting configuration page</h3>
+    <p>I developed a customisable welcome screen page for administrators to <strong>tailor the user experience</strong> of the screen casting feature.</p>
+    <p>I incorporated components like headings, images, and videos. Additionally, I added a feature enabling administrators to save different page designs for different sites.</p>
+    <div class="cs-img narrow"><img class="soft" src="../assets/img/antlabs/casting-config.jpg" alt="Casting configuration wireframe: component library on the left, TV welcome screen preview with a text style editor" loading="lazy"></div>
+
+    <h3>Casting report</h3>
+    <p>I designed <strong>a log</strong> to provide visibility into system behavior, help diagnose issues, monitor performance, ensure compliance, and support security efforts. This includes <strong>detailed information</strong> such as timestamp, user and room details, session duration, device information, etc.</p>
+    <div class="cs-img narrow"><img class="soft" src="../assets/img/antlabs/casting-report.jpg" alt="Casting report wireframe: a log table of casting sessions" loading="lazy"></div>
+
+    <h3>Casting overview</h3>
+    <p>I created some charts to provide a <strong>visual representation of data.</strong> This would help management to understand and analyse complex information.</p>
+    <p>I identified two main areas of focus for stakeholders regarding the casting function: <strong>usage and device health.</strong> Usage data included casting sessions over time and number of user sessions, while device health data included number of devices and which were most active. I organised these into separate tabs for easy access.</p>
+    <div class="cs-img two">
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/antlabs/overview-usage.jpg" alt="Casting overview wireframe, Usage tab: totals, usage by app and room, and sessions over time" loading="lazy">
+        <figcaption>Usage tab</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/antlabs/overview-device-health.jpg" alt="Casting overview wireframe, Device Health tab" loading="lazy">
+        <figcaption>Device health tab</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>An intuitive and aesthetic UI</h2>
+    <p>I also introduced new functionalities to enhance the usability of the new casting pages. These included <strong>dropdown menus</strong> to categorise menu items and allow users to access specific information quickly, <strong>sidebars to offer an accessible navigation hub</strong> for configuration of casting devices, <strong>prominent alert notifications</strong> to ensure administrators are promptly informed of any issues that require attention and <strong>charts to visually represent complex data trends and patterns</strong> and help administrators quickly grasp network performance metrics, user activity, and other analytics.</p>
+    <div class="cs-img narrow"><img class="soft" src="../assets/img/antlabs/ui-components.jpg" alt="UI components: services menu, column selector, filter panel, alert banner, charts, session expiry timer and edit configuration sidebar" loading="lazy"></div>
+    <div class="cs-thumb full">
+      <img src="../assets/img/antlabs/mockups.jpg" alt="Spread of high-fidelity casting pages" loading="lazy">
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Project complete and sign off!</h2>
+    <p>I reviewed the hifi mockups with the client and participated in a session to observe the product in a demo stage. After a couple of final adjustments, we obtained the client's approval and signed off on the project! Here's what they had to say.</p>
+    <blockquote class="cs-quote">
+      <p>“The UX/UI team is professional and pleasant to deal with. We got what we wanted and also some ideas on further improvement. They definitely know their stuff and as long as we stick to the schedule proposed, things will get done.”</p>
+      <footer><span class="cs-stars" aria-label="5 out of 5 stars">★★★★★</span> Kwang Tat Ang · Google review</footer>
+    </blockquote>
+  </section>
+
+  <div class="cs-more">
+    <h2>Other projects</h2>
+    <div class="grid">
+      <a class="card-link" href="workflow-builder.html">
+        <div class="card">
+          <div class="thumb full"><img src="../assets/img/workflow-builder.jpg" alt="Workflow Builder canvas" loading="lazy"></div>
+          <div class="body"><span class="yr">2026</span><h3>Workflow Builder</h3><p>Designing a no/low-code digital workflow builder</p></div>
+        </div>
+      </a>
+      <a class="card-link" href="research-assistant.html">
+        <div class="card">
+          <div class="thumb"><img src="../assets/img/research-assistant.jpg" alt="Research Assistant interface" loading="lazy"></div>
+          <div class="body"><span class="yr">2026</span><h3>Research Assistant</h3><p>Bringing conversational AI to an internal data hub</p></div>
+        </div>
+      </a>
+    </div>
   </div>
 
   <a class="back-link" href="../projects.html">← Back to projects</a>
