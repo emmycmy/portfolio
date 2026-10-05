@@ -29,14 +29,205 @@
     <span class="yr">2024</span>
     <h1>Lagun Sari web design</h1>
     <p>An overhaul of a wedding and catering website.</p>
+    <dl class="cs-meta">
+      <div><dt>Role</dt><dd>Lead UX Designer</dd></div>
+      <div><dt>Responsibilities</dt><dd>Heuristic analysis, user surveys, user personas, sitemapping, lofi wireframing</dd></div>
+      <div><dt>Date</dt><dd>Nov 2023 – Feb 2024</dd></div>
+      <div><dt>Tools</dt><dd>Figma</dd></div>
+    </dl>
   </div>
 
-  <div class="cs-thumb">
-    <img src="../assets/img/lagun-sari.jpg" alt="Lagun Sari web design cover image">
+  <div class="cs-stage">
+    <img src="../assets/img/lagun-sari/hero.jpg" alt="Tilted spread of Lagun Sari lofi wireframe pages">
   </div>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's the project as it appears on the projects page.
+  <section class="cs-section">
+    <h2>Simplifying wedding &amp; catering services online</h2>
+    <p>Lagun Sari is a prominent Malay wedding service provider in Singapore with over 20 years experience. They also offer halal catering services for mostly corporate clients. With multiple wedding packages, wedding venues, and various kitchen menus, their current state of their website is information-heavy, with the use of pdfs in almost every package and menu page, potentially overwhelming for first-time users. Our objective centred around refining their website, streamlining navigation for users seeking wedding or catering services.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>Uncovering main problem areas</h2>
+    <p>To begin, I thoroughly examined their existing website to understand their offerings and identify areas for potential improvement. Here are a couple of pain points I observed:</p>
+
+    <div class="cs-issue">
+      <span class="yr issue">Pain point 01</span>
+      <h3>Difficult to compare complex wedding packages</h3>
+      <ul class="cs-list">
+        <li>The wedding packages had lots of intricate details cluttering up the design, making it challenging to scan</li>
+        <li>Additionally, the packages were presented in different layouts making it tricky for users to compare their options.</li>
+      </ul>
+      <div class="cs-img"><img src="../assets/img/lagun-sari/pain-packages.jpg" alt="Existing wedding package pages for four venues, each in a different dense layout" loading="lazy"></div>
+    </div>
+
+    <div class="cs-issue">
+      <span class="yr issue">Pain point 02</span>
+      <h3>Inconsistent catering pages</h3>
+      <ul class="cs-list">
+        <li>In the Catering menu, each subpage has its own look and feel.</li>
+        <li>The Tingkat menu is in JPG images, the Daily Kitchen Menu links to an order page, and Catering and Healthier Choices lead to a landing page with downloadable PDFs.</li>
+        <li>Users may struggle to adapt to different interaction styles and make it harder for them to browse through the catering options smoothly</li>
+      </ul>
+      <div class="cs-img"><img src="../assets/img/lagun-sari/pain-catering.jpg" alt="Existing catering subpages: a Tingkat menu image, an order page and PDF landing pages, each styled differently" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">User research</span>
+    <h2>Getting to know the user</h2>
+    <p>We opted for an online survey to gather insights into our users' perspectives and preferences. Surveys provide participants with the opportunity to share their thoughts, offering valuable insights that we can use to develop distinct personas for Lagun Sari's primary users.</p>
+    <div class="cs-img narrow"><img class="soft" src="../assets/img/lagun-sari/survey-cover.jpg" alt="The wedding and catering survey forms" loading="lazy"></div>
+
+    <div class="cs-pair">
+      <div class="cs-note">
+        <h3>Survey Objectives</h3>
+        <p>My main goal was to gather user feedback on the current website, aiming to uncover their needs, preferences, and pain points. This would later on help us prioritise features or improvements. Additionally, the survey would also help us build accurate and empathetic user personas to effectively represent Lagun Sari’s primary target audience.</p>
+      </div>
+      <div class="cs-note">
+        <h3>Participants</h3>
+        <p>As Lagun Sari has two main services, I designed two distinct surveys to gather insights from different user group. One survey targeted six participants exploring wedding packages, while the other focuses on six participants looking for catering services on the website.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Quantitative vs. Qualitative questions</h2>
+    <p>My survey methodology included a blend of qualitative and quantitative questions to gain a comprehensive and nuanced understanding of user experiences. Quantitative questions help us obtain numerical data and measurable insights, while qualitative feedback contributed depth and context.</p>
+
+    <h3>Quantitative example: Pricing and Quality priorities revealed</h3>
+    <p>Participants were asked to choose their key considerations from a predefined list. This not only reduced the participants’ cognitive load and time required to complete the survey, but also facilitated the identification of trends and patterns.</p>
+    <p>In this case, the survey revealed that Pricing and Budget, along with Service Quality, emerged as unanimous priorities, and we knew we had to feature this information prominently in our design.</p>
+    <div class="cs-img mid"><img class="flat" src="../assets/img/lagun-sari/survey-priorities.jpg" alt="Bar chart of key considerations: Price and budget and Quality of service both chosen by 100% of participants" loading="lazy"></div>
+
+    <h3>Enhancing quantitative data with qualitative feedback</h3>
+    <p>In this example, following 2 quantitative questions about wedding packages, I invited participants to express, in their own words, what they found helpful or lacking in the packages.</p>
+    <p>Reviewing participant responses, while majority found that the necessary information was present, there were still improvements to be made: the layout could be optimised to help users compare across different packages, and pricing had to be transparent.</p>
+    <div class="cs-img mid"><img class="flat" src="../assets/img/lagun-sari/survey-feedback.jpg" alt="Survey responses: 83% found package info clear, with quotes about comparing packages and missing pricing" loading="lazy"></div>
+
+    <h3>Other findings from the surveys</h3>
+    <p>Our exploration extended beyond identifying the types of information beneficial for users. We also sought to delve deeper into understanding the participants. We wanted to collect detailed information about who our users are, along with insights into how they interact with competitors. This helps us understand the factors that influence their preferences and choices within the market landscape.</p>
+
+    <h4 class="cs-subhead">The demographics of Wedding vs Catering services</h4>
+    <p>For Wedding packages, there was a predominant representation from the 25-34 age group, which corresponds with the significant proportion (67%) of participants currently engaged and are likely to be actively planning weddings.</p>
+    <p>For Catering services, there was a wider age range spanning from 25 to 54 indicating a diverse clientele, with majority of participants ordered catering services for corporate events.</p>
+    <div class="cs-img two">
+      <img class="soft" src="../assets/img/lagun-sari/survey-demo-wedding.jpg" alt="Wedding survey demographics: all participants under 35, 67% currently engaged" loading="lazy">
+      <img class="soft" src="../assets/img/lagun-sari/survey-demo-catering.jpg" alt="Catering survey demographics: ages 25 to 54, most ordering for corporate events" loading="lazy">
+    </div>
+
+    <h4 class="cs-subhead">A competitive landscape</h4>
+    <p>Many participants, especially in the catering survey, actively engage in comparative evaluations to make informed decisions on the best available options. These individuals are likely to possess a thorough understanding of the various offerings in the market. Customers exploring similar websites may have specific expectations regarding information availability, pricing transparency, and service offerings.</p>
+    <p>In response to the question "What criteria did you use to compare Lagun Sari with competitors?", pricing emerges as the top priority for 11 out of 12 participants. This aligns with their earlier emphasis on budget considerations, underscoring the importance of clear and competitive pricing to satisfy budget-conscious customers.</p>
+    <div class="cs-img two">
+      <img class="soft" src="../assets/img/lagun-sari/survey-competitors-wedding.jpg" alt="Wedding survey: 50% actively compare providers, with each participant's comparison criteria" loading="lazy">
+      <img class="soft" src="../assets/img/lagun-sari/survey-competitors-catering.jpg" alt="Catering survey: 67% actively compare providers, with each participant's comparison criteria" loading="lazy">
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Leveraging survey insights to build relatable user personas</h2>
+    <p>Using the gathered survey data, I created two detailed profiles that captured the distinct needs of Lagun Sari users: those exploring wedding packages and those seeking catering services.</p>
+
+    <h3>Meet Aisha, a newly engaged 26 year old</h3>
+    <p>For wedding packages, our survey revealed that majority of individuals fall within the 25-34 age bracket, with a significant proportion of participants presently engaged. Thus we introduced Aisha, a 26 year old newly engaged individual actively involved in planning her wedding.</p>
+    <div class="cs-img narrow"><img class="soft" src="../assets/img/lagun-sari/persona-aisha.jpg" alt="Persona: Aisha, 26, newly engaged, with her story, goals, frustrations and questions" loading="lazy"></div>
+
+    <h3>And Daniel, a HR professional exploring catering for corporate events</h3>
+    <p>For catering services, there was a wider demographic between 25 to 54. With the notable demand for Lagun Sari's catering offerings in the corporate sector we created Daniel, a HR professional looking for catering solutions for corporate events.</p>
+    <div class="cs-img narrow"><img class="soft" src="../assets/img/lagun-sari/persona-daniel.jpg" alt="Persona: Daniel, 40, HR professional, with his story, goals, frustrations and questions" loading="lazy"></div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Information architecture</span>
+    <h2>Introducing a simplified, two option menu</h2>
+    <p>Our survey insights highlighted distinct needs between users seeking Wedding services and those looking for Catering services. To tailor the experience for these groups, I proposed a strategic overhaul of the top navigation. We decided to simplify the menu options from seven to just two main labels: "Lagun Sari Weddings" and "Lagun Sari Kitchen". This way, users can easily find what they need without getting lost in the clutter.</p>
+    <div class="cs-img narrow">
+      <figure class="cs-shot">
+        <img src="../assets/img/lagun-sari/nav-existing.jpg" alt="Existing top navigation with seven labels and social links" loading="lazy">
+        <figcaption>Existing navigation - 7 labels + social links</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="../assets/img/lagun-sari/nav-proposed.jpg" alt="Proposed top navigation with Lagun Sari Weddings and Lagun Sari Kitchen, plus Book Appointment and Contact us" loading="lazy">
+        <figcaption>Proposed navigation - 2 labels + 2 links to Appointment booking and Contact forms to drive conversions</figcaption>
+      </figure>
+    </div>
+
+    <h3>Grouping content by Weddings vs Kitchen</h3>
+    <p>I reorganised and grouped the content under these two new categories. The Wedding menu covers different venue options and promotions, while the Kitchen section addresses catering services, tingkat, and other kitchen orders. Key functions like appointment booking and contact us remain in the top navigation, as these are the actions we want users to take on the website. Here is the revamped sitemap.</p>
+    <div class="cs-img"><img src="../assets/img/lagun-sari/sitemap.jpg" alt="Revamped sitemap with Weddings and Kitchen branches, plus Book Appointment and Contact" loading="lazy"></div>
+
+    <h3>A centralised hub: implementing a dynamic megamenu</h3>
+    <p>To accommodate the streamlined 2-label version, I designed a mega menu to provide a convenient overview of all the offerings. This simplified method not only makes navigation easier but also gives users a swift and comprehensive view of the available services, ensuring a user-friendly and efficient browsing experience.</p>
+    <div class="cs-img split">
+      <img class="soft" src="../assets/img/lagun-sari/megamenu-weddings.jpg" alt="Weddings mega menu listing packages by venue type, with a promotions slot" loading="lazy">
+      <img class="soft" src="../assets/img/lagun-sari/megamenu-kitchen.jpg" alt="Kitchen mega menu listing catering and tingkat menus, with an order now prompt" loading="lazy">
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Starting the design</span>
+    <h2>Designing new features and functions</h2>
+    <p>When the client had approved the new sitemap, I proceeded to work on the lofi version of the website pages. Here are some of the new features I proposed.</p>
+
+    <h3>Category tabs and Summary cards</h3>
+    <p>I introduced category tabs and feature-rich cards for both Wedding packages and Kitchen menus. Category tabs provide users an organised way to explore different wedding packages by venues, and menus by meal types. In addition, the summary cards offer users a quick snapshot of essential details such as number of pax and pricing, facilitating easy comparison, an improvement directly addressing the survey-highlighted pain point.</p>
+    <div class="cs-img two">
+      <img class="soft" src="../assets/img/lagun-sari/tabs-wedding.jpg" alt="Wedding packages section with venue tabs and summary cards showing price and guest count" loading="lazy">
+      <img class="soft" src="../assets/img/lagun-sari/tabs-menu.jpg" alt="Menus section with meal-type tabs and summary cards showing price and pax" loading="lazy">
+    </div>
+
+    <h3>A rotating menu for Tingkat Delivery</h3>
+    <p>For Tingkat deliveries, Lagun Sari presents a different menu for each day with their 4-week menu being cycled every 3 months. After examining their existing 3-page menu, I discovered it was somewhat challenging to understand. Users might struggle to identify the current week's menu and navigate through the menu effectively.</p>
+    <p>Thus, I designed a rotating menu system. The default display would be the menu for the ongoing week. Users can simply click on any of the 12 weekly menus to directly access that week’s offerings. Additionally they have the option to swipe to explore other menus.</p>
+    <div class="cs-img two">
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/lagun-sari/tingkat-existing.jpg" alt="Existing Tingkat menu: three dense printed menu pages" loading="lazy">
+        <figcaption>Existing 3 page menu</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/lagun-sari/tingkat-new.jpg" alt="Proposed rotating Tingkat menu with week selector 1 to 12 and the current week's daily dishes" loading="lazy">
+        <figcaption>Proposed rotating menu</figcaption>
+      </figure>
+    </div>
+
+    <h3>Integrating photo gallery and reviews</h3>
+    <p>Based on our survey findings, 100% of participants rely on multimedia content to aid in their decision-making process. Additionally, 60% of participants consider reviews a crucial criterion when comparing between competitors. Thus, we incorporated a photo gallery and a dedicated section for reviews into our design on each inner page.</p>
+    <div class="cs-img narrow">
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/lagun-sari/gallery.jpg" alt="Photo gallery section: A Glimpse into Our Weddings" loading="lazy">
+        <figcaption>Photo Gallery</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/lagun-sari/testimonials.jpg" alt="Customer testimonials carousel" loading="lazy">
+        <figcaption>Customer Testimonials</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Wireframes</h2>
+    <p>Here are the final wireframes for the pages:</p>
+    <div class="cs-thumb full">
+      <img src="../assets/img/lagun-sari/wireframes.jpg" alt="Spread of the final lofi wireframes" loading="lazy">
+    </div>
+  </section>
+
+  <div class="cs-more">
+    <h2>Other projects</h2>
+    <div class="grid">
+      <a class="card-link" href="workflow-builder.html">
+        <div class="card">
+          <div class="thumb full"><img src="../assets/img/workflow-builder.jpg" alt="Workflow Builder canvas" loading="lazy"></div>
+          <div class="body"><span class="yr">2026</span><h3>Workflow Builder</h3><p>Designing a no/low-code digital workflow builder</p></div>
+        </div>
+      </a>
+      <a class="card-link" href="research-assistant.html">
+        <div class="card">
+          <div class="thumb"><img src="../assets/img/research-assistant.jpg" alt="Research Assistant interface" loading="lazy"></div>
+          <div class="body"><span class="yr">2026</span><h3>Research Assistant</h3><p>Bringing conversational AI to an internal data hub</p></div>
+        </div>
+      </a>
+    </div>
   </div>
 
   <a class="back-link" href="../projects.html">← Back to projects</a>
