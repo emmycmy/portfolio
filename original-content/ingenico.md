@@ -28,6 +28,7 @@ As the world continues to embrace the digital age, Ingenico wanted to develop an
 
 Our objectives were to establish a **user-friendly and adaptable interface** for Ingenico, aimed at delivering a seamless experience and maintaining consistency throughout the APAC regions. This design needed to be versatile enough to **cater to the unique requirements of various local markets**. For example, in some countries, QR wallets are the favored payment method, whereas in others, users still prefer card payments with either PIN entry. We also wanted to ensure a smooth experience for the users, mainly cashiers and managers.
 
+<!-- HIDDEN on Webflow (class "hide-for-now", display:none) — never shown to visitors; not used on the new page. -->
 ## Studying the demo product
 
 The client had a few demo products available. We studied these to familiarise ourselves with the diverse functionalities, and see where improvements could be made. Here are some of our findings.

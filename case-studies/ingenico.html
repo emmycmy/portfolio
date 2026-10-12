@@ -4,46 +4,232 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ingenico merchant app — emiline</title>
-<meta name="description" content="Designing a merchant payment Android application.">
+<meta name="description" content="Designing a merchant payment Android application with diverse payment functionalities.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="emillionaire.design">
+<meta property="og:title" content="Ingenico merchant app — emiline">
+<meta property="og:description" content="Designing a merchant payment Android application with diverse payment functionalities.">
+<meta property="og:url" content="https://emillionaire.design/case-studies/ingenico.html">
+<meta property="og:image" content="https://emillionaire.design/assets/img/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<link rel="stylesheet" href="../assets/css/editorial.css">
 </head>
-<body>
+<body class="ed">
 
-<header class="panel-nav">
-  <div class="wrap">
-    <nav class="site-nav">
-      <a class="wordmark" href="../">emillionaire</a>
-      <div class="navlinks">
-        <a href="../projects.html" aria-current="page">Projects</a>
-        <a href="../contact.html">Contact</a>
-      </div>
+<header class="ed-nav">
+  <div class="ed-bar">
+    <a class="wordmark" href="../index.html">emillionaire</a>
+    <nav>
+      <a href="../projects.html" aria-current="page">Projects</a>
+      <a href="../contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <div class="page-header cs-hero">
-    <span class="yr">2023</span>
-    <h1>Ingenico merchant app</h1>
-    <p>Designing a merchant payment Android application.</p>
-  </div>
+<main class="ed-wrap">
+  <header class="ed-head">
+    <div class="page-header cs-hero">
+      <span class="yr">2023</span>
+      <h1>Ingenico merchant app</h1>
+      <p>Designing a merchant payment Android application with diverse payment functionalities.</p>
+      <dl class="cs-meta">
+        <div><dt>Role</dt><dd>Lead UX/UI Designer</dd></div>
+        <div><dt>Responsibilities</dt><dd>Heuristic analysis, user flow mapping, sitemapping, lofi wireframing, rapid prototyping</dd></div>
+        <div><dt>Date</dt><dd>Mar – Oct 2023</dd></div>
+        <div><dt>Tools</dt><dd>Adobe XD, Miro</dd></div>
+      </dl>
+    </div>
 
-  <div class="cs-thumb">
-    <img src="../assets/img/ingenico.jpg" alt="Ingenico merchant app cover image">
-  </div>
+    <div class="ed-hero">
+      <img src="../assets/img/ingenico/hero.png" alt="Lofi wireframes beside two phones showing the hifi payment and sign-in screens">
+    </div>
+  </header>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's the project as it appears on the projects page.
-  </div>
+  <section class="cs-section">
+    <span class="yr">Project overview</span>
+    <h2>Transitioning from payment terminals to an Android application</h2>
+    <p>Ingenico provides payment solutions and services to merchants and banks globally. Their primary product is payment terminals, which enable businesses to accept <strong>various payment methods, such as credit/debit cards, mobile wallets, and contactless payments.</strong></p>
+    <p>As the world continues to embrace the digital age, Ingenico wanted to develop an <strong>Android application</strong> to remain competitive. This initiative will not only help them stay on par with their competitors but also offers their clients a quicker and more cost-effective way to get started.</p>
+  </section>
 
-  <a class="back-link" href="../projects.html">← Back to projects</a>
+  <section class="cs-section">
+    <h2>Project goals</h2>
+    <p>Our objectives were to establish a <strong>user-friendly and adaptable interface</strong> for Ingenico, aimed at delivering a seamless experience and maintaining consistency throughout the APAC regions. This design needed to be versatile enough to <strong>cater to the unique requirements of various local markets</strong>. For example, in some countries, QR wallets are the favored payment method, whereas in others, users still prefer card payments with either PIN entry. We also wanted to ensure a smooth experience for the users, mainly cashiers and managers.</p>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">User Flow</span>
+    <h2>Mapping out the journey of a user's interaction with the app</h2>
+    <p>To really understand how users might use the product, I started by creating a user flow map of the main user journeys. This basically helped me see the steps users would go through to get things done. Since the product is quite complex, the stakeholders and I decided to break it down into smaller parts. In the first batch, we focused on the most common tasks like <strong>sales, installment payments, voiding transactions, processing refunds, and settling transactions.</strong> Here are some of the flows I created:</p>
+
+    <h3>The sales flow: Processing a payment</h3>
+    <p>There are two primary options available to users: <strong>cards or QR wallets</strong>.</p>
+    <ul class="cs-list">
+      <li>Cards include credit/debit cards, which can be <strong>inserted, tapped, or swiped</strong> on the Android device. Alternatively, users can <strong>manually input their credit card details</strong>. Certain cards may require a <strong>Personal Identification Number (PIN)</strong>, while others may require a <strong>signature</strong> for validation.</li>
+      <li>For payment via QR wallets, users have a choice between <strong>scanning a QR code</strong> from their own device or <strong>displaying a QR code for scanning</strong> by the cashier's device.</li>
+    </ul>
+    <p>To ensure a comprehensive understanding of the user experience, I meticulously mapped out all potential transaction flows. These flows encompass scenarios where transactions are either <strong>approved, denied</strong>, or encounter a <strong>timeout</strong> issue. In the event of a transaction failure, users would be provided with the <strong>option to retry</strong>. If the transaction successfully passes through these stages, it proceeds to the <strong>processing and printing screens.</strong></p>
+    <div class="cs-img narrow"><img src="../assets/img/ingenico/flow-sales.jpg" alt="Sales user flow: card and QR wallet branches with approved, denied and timeout outcomes" loading="lazy"></div>
+
+    <h3>The Installment flow: Equal payments over a period of time</h3>
+    <p>When it comes to <strong>credit card installment payments</strong>, certain merchants may offer special <strong>promotions tied to specific brands.</strong> The payment process begins with the cashier's selection of a particular promotion or opting for no promotion at all.</p>
+    <p>Next, the user is presented with the option to <strong>select a payment term</strong>. This can be done by selecting from a list of <strong>predefined choices</strong> (eg. 3 months, 6 months, 12 months). We also provided users with the flexibility to <strong>manually input their preferred payment term</strong>.</p>
+    <p>Following the selection of the payment term, users are prompted to <strong>enter the payment amount</strong>. The system then automatically divides this amount by the chosen payment term to calculate the installment amounts.</p>
+    <p>The remaining steps of the process follow the standard credit card sales flow.</p>
+
+    <h3>Settlement: Completing the financial transaction</h3>
+    <p>Typically, settlements are processed in separate batches by each host at the end of the day. Following discussions with stakeholders, I devised two distinct flows to streamline the settlement process.</p>
+    <ul class="cs-list">
+      <li>The first flow, termed "Settle All," enables users to <strong>settle all transactions simultaneously.</strong></li>
+      <li>The second option, known as "Settle by Host", provides users with the flexibility to <strong>settle transactions based on the acquiring bank</strong> associated with each transaction.</li>
+    </ul>
+    <p>Once users have confirmed their chosen batches for settlement, the system initiates the processing, allowing users to monitor the progress until the settlement is complete and results are available. In the event of any transaction failing to settle, users are given the option to initiate a retry.</p>
+    <div class="cs-img two">
+      <figure class="cs-shot">
+        <img src="../assets/img/ingenico/flow-installment.jpg" alt="Installment user flow: promotion, payment term, amount, then the card sales flow" loading="lazy">
+        <figcaption>Installment flow</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="../assets/img/ingenico/flow-settlement.jpg" alt="Settlement user flow: Settle All or Settle by Host, processing, results and retry" loading="lazy">
+        <figcaption>Settlement flow</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Building a sitemap</h2>
+    <p>By referencing the user flow map, we were able to <strong>identify all the key screens</strong> that users would encounter during their interactions with the app. Each branch of the user flow map represented a specific pathway or set of actions, and these translated directly into the various sections and screens within the sitemap.</p>
+    <div class="cs-img"><img src="../assets/img/ingenico/sitemap.jpg" alt="App sitemap derived from the user flows" loading="lazy"></div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Starting the design</span>
+    <h2>Crafting the designs</h2>
+    <p>After getting the green light from the stakeholders on the user flow and sitemap, I started working on the design. Here are some of the lofi and hifi designs.</p>
+
+    <h3>The login screens</h3>
+    <p>As the only users with login access to the app would be pre-determined by the merchant (cashiers and managers), I implemented a <strong>dropdown selection</strong> that presents users with pre-defined user IDs to simplify the login process, <strong>eliminating the need for users to manually input their user ID each time</strong>.</p>
+    <div class="cs-phones">
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/login-lofi-1.jpg" alt="Lofi sign in screen" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/login-lofi-2.jpg" alt="Lofi sign in with user ID dropdown open" loading="lazy">
+        </div>
+        <figcaption>Lofi</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/login-hifi-1.jpg" alt="Hifi sign in screen" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/login-hifi-2.jpg" alt="Hifi sign in with user ID dropdown open" loading="lazy">
+        </div>
+        <figcaption>Hifi</figcaption>
+      </figure>
+    </div>
+
+    <h3>Designing for different market specifications</h3>
+    <p>In markets like <strong>the Philippines and Vietnam</strong>, where larger amounts are common, I created two input field versions and keypads. One allowed up to 8-10 digits with a <strong>'000' button</strong> for cashier convenience.</p>
+    <p class="cs-aside">Following stakeholder feedback for more digits and a '00' button, we adjusted the input field's font size in the hifi stage, and added an extra keypad screen. We also included a currency dropdown for user flexibility.</p>
+    <div class="cs-phones">
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/amount-lofi-1.jpg" alt="Lofi sale amount keypad in SGD" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/amount-lofi-2.jpg" alt="Lofi sale amount keypad in VND with a 000 key" loading="lazy">
+        </div>
+        <figcaption>Lofi</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/amount-hifi-1.jpg" alt="Hifi sale amount keypad with currency dropdown and 00 key" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/amount-hifi-2.jpg" alt="Hifi sale amount keypad in VND with 000 and 00 keys" loading="lazy">
+        </div>
+        <figcaption>Hifi</figcaption>
+      </figure>
+    </div>
+
+    <h3>QR wallet payments</h3>
+    <p>For QR payments, I designed a <strong>toggle</strong> switch to allow users to easily switch between <strong>"View QR"</strong> which displays a QR code on the Android device, or <strong>"Scan QR"</strong>, where customers can scan a QR code from their own device.</p>
+    <div class="cs-phones">
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/qr-lofi-1.jpg" alt="Lofi QR payment with Scan QR selected" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/qr-lofi-2.jpg" alt="Lofi QR payment with View QR selected showing a code" loading="lazy">
+        </div>
+        <figcaption>Lofi</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/qr-hifi-1.jpg" alt="Hifi QR payment with Scan QR selected" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/qr-hifi-2.jpg" alt="Hifi QR payment with View QR selected showing a code" loading="lazy">
+        </div>
+        <figcaption>Hifi</figcaption>
+      </figure>
+    </div>
+
+    <h3>Settlement - Settle All vs Settle by Host</h3>
+    <p>As users can settle transactions individually or in batches by host, I initially designed two screens. In the "Settle by Host" wireframe, I designed for the <strong>selection of multiple hosts.</strong></p>
+    <p class="cs-aside">Later on during the hifi phase, we recognised that even if users choose to "Select by Host", they may sometimes choose to Select All, then manually de-select specific items. We enhanced the design by adding a 'Settle All' checkbox to the "Settle by Host" screen to streamline this process.</p>
+    <div class="cs-phones">
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/settle-lofi-1.jpg" alt="Lofi Settle All summary by host" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/settle-lofi-2.jpg" alt="Lofi Settle by Host with a checkbox per host" loading="lazy">
+        </div>
+        <figcaption>Lofi</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/settle-hifi-1.jpg" alt="Hifi Settle All summary" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/settle-hifi-2.jpg" alt="Hifi Settle by Host with a Select All checkbox" loading="lazy">
+        </div>
+        <figcaption>Hifi</figcaption>
+      </figure>
+    </div>
+
+    <h3>Viewing previous transactions</h3>
+    <p>Another important function of the app was to allow users to view previous transactions. I designed a <strong>transaction history page</strong> with a <strong>search bar</strong> to locate transactions by Invoice number or amount. I also included <strong>filters for Transaction Type, Host, and Payment Method</strong> to make it easier for users to find the transaction they need. Additionally, I added <strong>category tags</strong> for each transaction, improving visual clarity and making it <strong>easier for the user to scan</strong> the list.</p>
+    <div class="cs-phones">
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/history-lofi-1.jpg" alt="Lofi transaction history with search and tagged transactions" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/history-lofi-2.jpg" alt="Lofi transaction history with filter panel open" loading="lazy">
+        </div>
+        <figcaption>Lofi</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <div class="pair">
+          <img class="soft" src="../assets/img/ingenico/history-hifi-1.jpg" alt="Hifi transaction history" loading="lazy">
+          <img class="soft" src="../assets/img/ingenico/history-hifi-2.jpg" alt="Hifi transaction history with filter panel open" loading="lazy">
+        </div>
+        <figcaption>Hifi</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>The rest of the designs</h2>
+    <p>This project is a WIP, we are currently polishing the hifi designs and a rapid prototype. In the meantime, you can view some of the other wireframes I created below!</p>
+    <div class="cs-thumb full">
+      <img src="../assets/img/ingenico/mockups.jpg" alt="Spread of further app wireframes" loading="lazy">
+    </div>
+  </section>
+
+  <nav class="ed-next" aria-label="More work">
+    <a href="../projects.html"><span>Back to</span>All work</a>
+    <a href="antlabs.html"><span>Next project</span>ANTlabs dashboard</a>
+  </nav>
 </main>
 
-<footer class="foot wrap">
-  <span>emillionaire.design</span>
+<footer class="ed-foot">
+  <div class="ed-bar"><span>emillionaire.design</span><span>emilinechee@gmail.com</span></div>
 </footer>
 
 </body>
