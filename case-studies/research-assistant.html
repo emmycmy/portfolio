@@ -4,14 +4,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Research Assistant — emiline</title>
-<meta name="description" content="Bringing conversational AI to an internal data hub">
+<meta name="description" content="Bringing conversational AI to an internal data hub.">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="emillionaire.design">
 <meta property="og:title" content="Research Assistant — emiline">
-<meta property="og:description" content="Bringing conversational AI to an internal data hub">
+<meta property="og:description" content="Bringing conversational AI to an internal data hub.">
 <meta property="og:url" content="https://emillionaire.design/case-studies/research-assistant.html">
 <meta property="og:image" content="https://emillionaire.design/assets/img/share.jpg">
 <meta property="og:image:width" content="1200">
@@ -41,16 +41,207 @@
       <span class="yr">2026</span>
       <h1>Research Assistant</h1>
       <p>Bringing conversational AI to an internal data hub</p>
+      <dl class="cs-meta">
+        <div><dt>Role</dt><dd>Solo product designer</dd></div>
+        <div><dt>Client</dt><dd>Enterprise Singapore</dd></div>
+        <div><dt>Status</dt><dd>Third round of beta testing in progress</dd></div>
+        <div><dt>Date</dt><dd>Oct 2025 – Jun 2026</dd></div>
+      </dl>
+      <p class="cs-fine">* Product name and assets replaced to protect internal product identity.</p>
     </div>
 
     <div class="ed-hero">
-      <img src="../assets/img/research-assistant.png" alt="Research Assistant cover image">
+      <img src="../assets/img/research-assistant.png" alt="Research Assistant chat home with 3 companies and 3 skills active, overlapped by the Skills library and a skill detail drawer">
     </div>
   </header>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's a preview of the project.
-  </div>
+  <section class="cs-section">
+    <h2>Overview</h2>
+    <p>Enterprise Singapore was building an AI-powered research assistant designed to help its officers quickly access company and market intelligence stored across fragmented internal systems. The goal was to <strong>reduce the time spent on manual research</strong> and enable users to retrieve trustworthy, sourced information through natural language conversations. The agent draws from two source layers:</p>
+    <ul class="cs-list">
+      <li>An <strong>internal database</strong> containing company profiles, engagement reports, scheme participation records, and grant history;</li>
+      <li>and real-time external <strong>web search</strong> with source citations</li>
+    </ul>
+    <p>As the sole designer on this project, I owned end-to-end product design, working closely with the PM, AI engineer and dev team to ship more than 10 features, translating product requirements into buildable specifications across multiple beta rounds.</p>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">How it evolved</span>
+    <h2>From chatbot to research platform</h2>
+    <p>The product went through three distinct phases, <strong>each shaped by what we learned from the one before</strong>.</p>
+
+    <div class="cs-issue">
+      <span class="yr">Phase 01 · Concept</span>
+      <h3>Touchpoints AI</h3>
+      <p>A chatbot embedded within the “Past Touchpoints” section of a company-specific page within ESG’s data hub. It’s <strong>scoped entirely to that company’s engagement history</strong>. Officers could ask questions about call reports, meetings, past interactions with that specific company without leaving their current view.</p>
+      <p class="cs-aside">Assumption: officers want help in context, where they’re already looking at. Interviews with ~10 officers showed they needed more than just engagement history.</p>
+      <div class="cs-img"><img class="soft" src="../assets/img/research-assistant/touchpoints-ai.gif" alt="Prototype: opening the Touchpoints AI chatbot from a company page in the data hub" loading="lazy"></div>
+    </div>
+
+    <div class="cs-issue">
+      <span class="yr">Phase 02 · Beta</span>
+      <h3>Sidebar + Full page chat</h3>
+      <p>Two surfaces were built in parallel: a <strong>sidebar</strong> chatbot for <strong>company-specific queries</strong>, embedded within the existing platform, and a standalone <strong>full-page chat</strong> for <strong>broader research</strong> across internal and external sources. The idea was that officers could use whichever fit their task.</p>
+      <p>Beta testing showed officers consistently struggled to discover the sidebar and preferred the full-page experience for everything. <strong>The sidebar was decommissioned.</strong></p>
+      <p class="cs-aside">Insight: officers weren’t just reviewing one company. They were synthesising across companies, sectors, and sources — and they wanted one surface to do it all.</p>
+      <div class="cs-img">
+        <figure class="cs-shot">
+          <img class="soft" src="../assets/img/research-assistant/sidebar-prototype.gif" alt="Prototype: the sidebar chatbot opening beside a company page" loading="lazy">
+          <figcaption>Sidebar chat</figcaption>
+        </figure>
+        <figure class="cs-shot">
+          <img class="soft" src="../assets/img/research-assistant/full-page-chat.jpg" alt="Full-page Research Assistant chat with suggested prompts under the input" loading="lazy">
+          <figcaption>Full-page chat</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="cs-issue">
+      <span class="yr">Phase 03 · Current</span>
+      <h3>Agentic research platform</h3>
+      <p>Rather than asking a question and receiving an answer, officers now brief the agent — <strong>setting scope, activating skills</strong>, and <strong>letting the agent autonomously plan, query, synthesise, and evaluate</strong> before responding. The officer delegates; the agent handles the research workflow.</p>
+      <p class="cs-aside">Insight: access to information wasn’t the bottleneck. Officers needed to be able to shape how the agent worked, not just what it searched.</p>
+      <div class="cs-img"><img src="../assets/img/research-assistant/agentic.jpg" alt="Skills library with a skill detail drawer, overlapped by the chat with 4 companies and 3 skills active and the Add companies to context drawer open" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Discovery</span>
+    <h2>User interviews</h2>
+    <p>Alongside early concept testing, we interviewed around 10 officers to understand what would make them trust an AI assistant enough to act on its output. One concern came up consistently: officers wanted to know how a response was reached and where it came from, before relying on it.</p>
+    <p>This shaped a decision that ran through the rest of the project — <strong>source attribution needed to be visible</strong> at every stage of the research process, not just appended to a finished answer.</p>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Research and validation</span>
+    <h2>Beta testing</h2>
+    <div class="cs-stats">
+      <div><b>~70</b><span>Officers across divisions</span></div>
+      <div><b>2</b><span>Rounds of beta testing</span></div>
+      <div><b>3</b><span>Structured test cases per session</span></div>
+      <div><b>13</b><span>Features designed and iterated</span></div>
+    </div>
+    <p>The product has run two rounds of beta testing with approximately 70 officers across different divisions, each guided through three structured test cases designed to surface usability issues and unmet needs. Feedback from earlier rounds directly shaped the features built in subsequent sprints.</p>
+
+    <h3>Top issues identified</h3>
+    <p>As a user –</p>
+    <div class="cs-needs">
+      <div>
+        <span class="yr issue">Context</span>
+        <p>I would like the agent to <strong>understand our context better.</strong> eg. sector resolution, brief format, writing/synthesis style.</p>
+      </div>
+      <div>
+        <span class="yr issue">Scope</span>
+        <p>I would like my queries to be <strong>grounded in a specific company</strong> without having to restate that context in every prompt</p>
+      </div>
+      <div>
+        <span class="yr issue">Sources</span>
+        <p>I would like to see the <strong>web sources</strong> consulted during research. I also want to be able to open and review the underlying call reports <strong>directly within the interface</strong>, rather than being pointed to an external system</p>
+      </div>
+    </div>
+    <p>These findings shaped the next phase of design work. Below are some of the key features — what problem each solved and the decisions behind them.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>Key features</h2>
+
+    <span class="yr">Features 01 &amp; 02</span>
+    <h3>Context – Skills and prompt enhancement</h3>
+    <p>Beta feedback made clear that officers weren’t struggling with access to information — they were struggling to ask for it in a way that produced useful results. <strong>Different users had different expectations for format, tone, and depth</strong>, and the agent had no way to account for that by default. Two features were designed in response, working at different points in the same problem.</p>
+
+    <h4 class="cs-subhead">1. Skills</h4>
+    <p>Skills are the <strong>small, reusable instruction bundles</strong> that <strong>teach the agent how to execute a specific task consistently</strong>. For example, an officer activating the “Sector Landscape Summary” skill gets a structured overview covering market size, key players, trends, etc. — without having to specify any of that in every prompt.</p>
+    <p>The design challenge was making skills feel lightweight and in-reach, not like a settings menu buried in a corner. <strong>The skills bar sits directly beneath the input box</strong>, always visible. A manage link opens a library and a drawer pattern lets officers browse the library while keeping chat context in view.</p>
+    <figure class="cs-shot cs-img mid">
+      <img src="../assets/img/research-assistant/skills-bar.png" alt="Three states of the skills bar under the input: skills off, no skills active, and two skills active plus 2 more" loading="lazy">
+      <figcaption>Skills bar within input box</figcaption>
+    </figure>
+    <figure class="cs-shot cs-img">
+      <img class="soft" src="../assets/img/research-assistant/skill-library.jpg" alt="Skills library with category tabs and toggles, and a drawer showing the Sector Landscape Summary skill's description and body" loading="lazy">
+      <figcaption>Skills library with detail drawer; browse, preview, and toggle without leaving the page</figcaption>
+    </figure>
+
+    <h4 class="cs-subhead">2. Prompt enhancement</h4>
+    <p>Even with skills active, officers sometimes sent prompts <strong>too brief or ambiguous</strong> to produce a good result. The Enhance button addresses this at the moment of input — <strong>expanding and clarifying a prompt before it’s sent</strong>, without requiring the officer to know what a “good” prompt looks like.</p>
+    <p>The interaction had to feel helpful, not corrective. I designed <strong>six distinct states</strong>: empty (disabled), below character threshold, ready, streaming (text rewrites inline rather than showing a loading spinner), complete with two-level undo, and error — with distinct amber vs. red treatments for timeout vs. failure.</p>
+    <figure class="cs-shot cs-img mid">
+      <img src="../assets/img/research-assistant/enhance-states.png" alt="Six states of the input's Enhance button, from disabled to enhanced with undo, and an error message" loading="lazy">
+      <figcaption>Enhance button state progression: empty → below-threshold → ready → streaming → complete → error</figcaption>
+    </figure>
+
+    <span class="yr">Feature 03</span>
+    <h3>Company scoping</h3>
+    <p>One of the more complex interaction problems was giving officers a way to direct queries at specific companies — without breaking the flow of starting a conversation. Early versions treated scope as a single-company toggle, but officer feedback made clear that the scope needed to <strong>support multiple companies and bulk selection</strong>, not just one entity at a time.</p>
+    <p><strong>Key constraint:</strong> Company scope had to be set before the first message was sent. Changing it mid-session would invalidate the conversation context — so the <strong>entry point had to be clear</strong> and the locked state had to communicate itself, not surface as an error after the fact.</p>
+    <p>Getting to the right pattern took several iterations, each exposing a different problem.</p>
+
+    <div class="cs-issue">
+      <span class="yr issue">Iteration 1</span>
+      <h4 class="cs-subhead">Slash command</h4>
+      <p>Typing “/” in the input opened a <strong>contextual menu</strong> surfacing both companies and skills as options — a pattern familiar from tools like Notion or Claude. The problem was <strong>discoverability</strong>. Officers who didn’t know about the shortcut would never find scope or skills at all.</p>
+      <figure class="cs-shot cs-img mid">
+        <img src="../assets/img/research-assistant/iteration-1.png" alt="Input with a slash menu offering Companies and Skills" loading="lazy">
+        <figcaption>Typing “/” surfaces a contextual menu with Companies and Skills options inline in the input</figcaption>
+      </figure>
+    </div>
+
+    <div class="cs-issue">
+      <span class="yr issue">Iteration 2</span>
+      <h4 class="cs-subhead">Settings gear popover</h4>
+      <p>Consolidating scope and skills into a single <strong>gear icon popover</strong> was a tidier surface — one entry point for both. But the gear icon gave <strong>no signal about what was currently configured</strong>. An officer glancing at the input had no way to know whether scope was set or skills were active without clicking to check. The icon couldn’t communicate state.</p>
+      <figure class="cs-shot cs-img mid">
+        <img src="../assets/img/research-assistant/iteration-2.png" alt="Gear icon popover listing company chips and skill chips" loading="lazy">
+        <figcaption>Gear icon in toolbar opens a popover showing Companies and Skills chips in one panel</figcaption>
+      </figure>
+    </div>
+
+    <div class="cs-issue">
+      <span class="yr issue">Iteration 3</span>
+      <h4 class="cs-subhead">Scope banner above input</h4>
+      <p>Moving scope above the input as <strong>a persistent “<em>Scoped to</em>” banner</strong> made the configured state visible at a glance. But with scope as one row and skills as a separate row below the input, the <strong>composer area felt heavy.</strong> Two rows of configuration before you’d even typed anything.</p>
+      <figure class="cs-shot cs-img mid">
+        <img src="../assets/img/research-assistant/iteration-3.png" alt="Scoped to banner with company chips above the input, and a skills row below it" loading="lazy">
+        <figcaption>“Scoped to:” banner row above input with company chips, skills toggle row below</figcaption>
+      </figure>
+    </div>
+
+    <div class="cs-issue">
+      <span class="yr rec">Final</span>
+      <h4 class="cs-subhead">Config line</h4>
+      <p>The solution was collapsing both scope and skills into <strong>a single compact strip below the input</strong> ie. the config line. It always declares the current state eg. “4 companies · 3 Skills active” — and stays visible throughout the session. Scope and skills are no longer two separate UI concerns; they’re one line of context that officers can read at a glance before typing.</p>
+      <figure class="cs-shot cs-img mid">
+        <img src="../assets/img/research-assistant/iteration-4.png" alt="Input with a single config line reading 4 companies and 3 skills active" loading="lazy">
+        <figcaption>Config line below input as a single compact strip</figcaption>
+      </figure>
+      <p>Clicking “Edit” on the config line opens a <strong>right-side drawer</strong> in edit mode — already-scoped companies appear as chips, and officers can search to add more or remove existing ones. Changes are staged before committing, so <strong>officers can adjust scope</strong> without accidentally applying half-finished changes. Once confirmed, the config line and input placeholder update to reflect the new state.</p>
+      <div class="cs-img"><img class="soft" src="../assets/img/research-assistant/editing-companies.jpg" alt="Chat with the Add companies to context drawer open in edit mode, showing selected companies as chips" loading="lazy"></div>
+    </div>
+
+    <span class="yr">Features 04 &amp; 05</span>
+    <h3>Source attribution</h3>
+    <p>From the earliest user interviews, <strong>trust was the central concern</strong>: how would officers know whether a response was accurate, and where it came from? Source attribution should be visible at every stage of the research process, not just at the end. Two components carry this across the product.</p>
+
+    <h4 class="cs-subhead">1. Citation bubbles in reasoning steps</h4>
+    <p>As the agent works through a query, it <strong>shows the web sources</strong> it consulted at each reasoning step — inline, in real time. Officers can see the research process as it happens rather than receiving a finished answer with no visibility into how it was reached. <strong>Citation bubbles appear as compact chips attached to each reasoning step</strong>, expanding to show source detail on demand.</p>
+    <figure class="cs-shot cs-img mid">
+      <img src="../assets/img/research-assistant/citation-bubbles.png" alt="Searched the web reasoning step with six source chips and 4 more" loading="lazy">
+      <figcaption>Reasoning steps with citation bubbles</figcaption>
+    </figure>
+
+    <h4 class="cs-subhead">2. Call report drawer</h4>
+    <p>For internal sources — call reports referenced in a response — officers needed a way to <strong>verify the underlying document without leaving the chat.</strong> Clicking a report reference opens a dedicated <strong>drawer on the right side</strong> of the screen, <strong>rendering the full report inline</strong>. The left sidebar collapses to an icon rail to make space, keeping chat context visible behind the drawer rather than replacing it entirely.</p>
+    <p>The key decision was treating the collapsed sidebar as a contextual state triggered by the drawer, not a persistent user preference. When the drawer closes, the sidebar returns to full width automatically — so officers never have to manually restore their workspace after reading a source.</p>
+    <figure class="cs-shot cs-img">
+      <img class="soft" src="../assets/img/research-assistant/call-report-drawer.gif" alt="Prototype: clicking a call report reference opens the report in a right-side drawer while the sidebar collapses" loading="lazy">
+      <figcaption>Prototype of opening a call report inline</figcaption>
+    </figure>
+  </section>
+
+  <section class="cs-section">
+    <h2>Still evolving</h2>
+    <p>This case study reflects the product as it stands today, but the work isn’t done. The platform is in active beta, with new rounds of testing continuing to surface feedback that shapes the next sprint. Features in this case study have already been iterated since their first release, and <strong>new problems are being defined as more officers use the product in real research contexts.</strong></p>
+    <p>For a product built around an agent that learns and adapts, it feels right that the design does too.</p>
+  </section>
 
   <nav class="ed-next" aria-label="More work">
     <a href="../projects.html" data-back><span>Back to</span>All work</a>
