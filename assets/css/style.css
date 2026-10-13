@@ -333,6 +333,8 @@ a{ color:inherit; text-decoration:none; }
   border-top:2px solid var(--z-ink);
 }
 
+.foot a:hover{ text-decoration:underline; text-underline-offset:3px; }
+
 @media (max-width:680px){
   .grid{ grid-template-columns:1fr; }
   .grid .card{ transform:none !important; }
