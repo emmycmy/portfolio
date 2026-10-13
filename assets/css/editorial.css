@@ -43,6 +43,9 @@ body.ed{
 /* images sit straight on the page: no boxes, no panels */
 .ed .cs-thumb{ border:0; border-radius:12px; padding:0; background:none; }
 .ed .cs-thumb img{ border-radius:12px; box-shadow:0 10px 30px rgba(19,26,61,.10), 0 2px 6px rgba(19,26,61,.06); }
+/* rows of three phone screens; a narrow frame for small GIFs so they aren't upscaled */
+.ed .cs-img.three{ grid-template-columns:repeat(3,1fr); align-items:start; max-width:720px; margin-left:auto; margin-right:auto; }
+.ed .cs-img.xs{ max-width:320px; margin-left:auto; margin-right:auto; }
 /* pairs of phone screens stay phone-sized */
 .ed .cs-img.two.mid{ max-width:560px; }
 .ed .cs-fig{ border:0; border-radius:0; background:none; overflow:visible; }
@@ -95,6 +98,7 @@ body.ed{
 .ed-foot .ed-bar{ max-width:1040px; margin:0 auto; padding:24px 24px 48px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size:12px; font-weight:600; letter-spacing:.06em; text-transform:uppercase; color:var(--ed-sub); }
 
 @media (max-width:680px){
+  .ed .cs-img.three{ grid-template-columns:1fr; max-width:300px; }
   .ed-wrap{ padding:0 16px; }
   .ed-nav .ed-bar{ padding:16px; }
   .ed-head{ padding-top:32px; padding-bottom:36px; }
