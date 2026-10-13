@@ -41,16 +41,81 @@
       <span class="yr">2025</span>
       <h1>Wealth Series</h1>
       <p>Designing a data-rich, AI-powered portfolio strategy dashboard for retail investors.</p>
+      <dl class="cs-meta">
+        <div><dt>Role</dt><dd>UI Designer</dd></div>
+        <div><dt>Responsibilities</dt><dd>Hifi design, prototyping, collaboration with dev team for handoff</dd></div>
+        <div><dt>Date</dt><dd>Feb – May 2025</dd></div>
+      </dl>
     </div>
 
     <div class="ed-hero">
-      <img src="../assets/img/wealth-series.png" alt="Wealth Series cover image">
+      <img src="../assets/img/wealth-series.png" alt="Wealth Series on two laptops: the Atlas tier dashboard and a strategy's portfolio page">
     </div>
   </header>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's a preview of the project.
-  </div>
+  <section class="cs-section">
+    <h2>Overview</h2>
+    <p>Wealth Series is a premium portfolio management product within TradeAlgo that leverages AI to recommend trading strategies based on a user’s assets under management (AUM). The product is tiered into three levels: Atlas, Titan, and Everest, catering to different investor profiles.</p>
+    <p>This project focused primarily on <strong>high-fidelity UI design</strong> rather than deep UX exploration, as core functionality and flows were already defined by the product and quant teams. My role was to translate these requirements into clean, intuitive interfaces.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>Key features</h2>
+
+    <h3>Easy tier navigation</h3>
+    <p>Users can access Wealth Series directly from the main sidebar, where each investment tier is listed as a separate section. This clear, top-level navigation allows users to easily explore the tier most relevant to their AUM bracket, and quickly switch between tiers to compare different strategies and offerings. Each tier opens to its own dedicated dashboard with AI-curated strategies tailored to that investor segment.</p>
+    <div class="cs-img split-rev">
+      <figure class="cs-shot">
+        <img src="../assets/img/wealth-series/sidebar.jpg" alt="Sidebar with Wealth Series opening a menu of the Everest, Titan and Atlas tiers" loading="lazy">
+        <figcaption>Sidebar navigation</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/wealth-series/dashboard.jpg" alt="Atlas tier dashboard with three AI-recommended strategy cards above portfolio activity" loading="lazy">
+        <figcaption>Wealth Series dashboard</figcaption>
+      </figure>
+    </div>
+
+    <h3>Porfolio overview at a glance</h3>
+    <p>Each tier dashboard starts with a set of AI-recommended strategies - three for Atlas and Titan, and five for Everest. Each strategy is presented as a card showing the total P/L, a brief description, and the top 5 holdings.</p>
+    <div class="cs-img"><img src="../assets/img/wealth-series/cards-atlas.jpg" alt="Atlas: three strategy cards with overall P/L, a sparkline, a description and the top 5 holdings" loading="lazy"></div>
+    <p>For Everest’s five-strategy layout, we adjusted the card design to fit the narrower layout by removing the sparkline for a cleaner, more readable display.</p>
+    <div class="cs-img"><img src="../assets/img/wealth-series/cards-everest.jpg" alt="Everest: five narrower strategy cards without sparklines" loading="lazy"></div>
+
+    <h3>Detailed portfolio view</h3>
+    <p>Clicking a strategy card opens a detailed view, with a fixed-left chart module and scrollable right-side content. This layout ensures that users can track performance with the interactive performance chart and full list of holdings, while exploring deeper data at their own pace.</p>
+    <div class="cs-img"><img src="../assets/img/wealth-series/portfolio.jpg" alt="Accelerated Growth portfolio page: performance chart and holdings on the left, Key Portfolio Adjustments list on the right" loading="lazy"></div>
+    <p>The right panel features a Key Portfolio Adjustments module, a scrollable list of AI-suggested actions like buy/sell/hold. Clicking into any adjustment opens a focused panel providing the ticker overview, LLM-generated reasoning for the adjustment, and other financial information. This design empowers users to understand the <em>why</em> behind AI decisions before making changes.</p>
+    <div class="cs-img"><img src="../assets/img/wealth-series/portfolio-adjustment.jpg" alt="Adjustment panel for TSLA with the overview, the latest adjustment reasoning and a price chart" loading="lazy"></div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Prototype</h2>
+    <p>To bring the Wealth Series interface to life, we created a high-fidelity prototype showcasing key flows and interactions, from exploring AI-recommended strategies to viewing in-depth portfolio details.This prototype was used for internal reviews, stakeholder alignment, and early feedback.</p>
+    <p>Watch the walkthrough below:</p>
+    <div class="cs-img"><img class="soft" src="../assets/img/wealth-series/prototype.gif" alt="Prototype walkthrough: browsing the Atlas strategies and opening a portfolio's details" loading="lazy"></div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Handoff to dev</h2>
+    <p>To ensure a smooth transition from design to build, we prepared detailed handoff files in Figma, complete with <strong>notes on layout structure, spacing, and interactions.</strong> For components with interactive behaviour like tab switching or hover states, we included clear annotations and examples. These notes helped reduce ambiguity during development and made it easier for engineers to implement the designs as intended.</p>
+    <div class="cs-img mid">
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/wealth-series/handoff-spacing.jpg" alt="Portfolio page annotated with padding values and a 3 out of 7 / 4 out of 7 column grid" loading="lazy">
+        <figcaption>Example: Documenting padding values and grid layout</figcaption>
+      </figure>
+    </div>
+    <div class="cs-img mid">
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/wealth-series/handoff-interactions.jpg" alt="Performance chart annotated with hover behaviour and tooltip placement notes" loading="lazy">
+        <figcaption>Example: Annotating interactions</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Ongoing development</h2>
+    <p>The Wealth Series product is currently in development. Our team is working closely with QA to ensure that both the visual design and interactive behaviours are implemented accurately. This includes checking layout alignment, ensuring smooth interactions, and verifying that data is displayed correctly. By maintaining a tight feedback loop between design and development, we’re making sure the final product stays true to the original vision.</p>
+  </section>
 
   <nav class="ed-next" aria-label="More work">
     <a href="../projects.html" data-back><span>Back to</span>All work</a>
