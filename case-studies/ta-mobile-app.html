@@ -40,17 +40,152 @@
     <div class="page-header cs-hero">
       <span class="yr">2025</span>
       <h1>TA mobile app</h1>
-      <p>Redesigning a trading analytics platform web experience for mobile</p>
+      <p>Translating the TradeAlgo web experience into a mobile app design.</p>
+      <dl class="cs-meta">
+        <div><dt>Role</dt><dd>UXUI Designer</dd></div>
+        <div><dt>Responsibilities</dt><dd>Sitemapping, hifi designs, handoff to dev, QC</dd></div>
+        <div><dt>Date</dt><dd>Jan – Feb 2025</dd></div>
+      </dl>
     </div>
 
     <div class="ed-hero">
-      <img src="../assets/img/ta-mobile-app.png" alt="TA mobile app cover image">
+      <img src="../assets/img/ta-mobile-app.png" alt="TradeAlgo on two iPhones and a laptop: Top Picks of the Day, the TSLA ticker page and the web dashboard">
     </div>
   </header>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's a preview of the project.
-  </div>
+  <section class="cs-section">
+    <h2>Project background</h2>
+    <p>TradeAlgo, a trading analytics platform offering AI-driven market insights and trading tools, was designed for the web, and lacked a mobile optimised experience. My role was to adapt its features into a seamless mobile design while ensuring consistency and usability across devices.</p>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Information architecture</span>
+    <h2>Structuring the experience</h2>
+    <p>I started by analysing the web version’s information architecture to restructure it for a mobile-friendly experience. This included:</p>
+    <ul class="cs-list">
+      <li>Streamlining the navigation menu with bottom navigation. This was designed to provide quick access to the most frequently used features.</li>
+    </ul>
+    <div class="cs-img narrow"><img src="../assets/img/ta-mobile-app/sitemap-bottom-nav.png" alt="Sitemap of the bottom navigation and the pages under each tab" loading="lazy"></div>
+    <ul class="cs-list">
+      <li>Less frequently accessed functions, such as profile settings, promotions, support, tutorials, and notifications, were grouped under a dedicated Menu/Profile page for better organisation. This approach ensured that core actions remained easily accessible while maintaining a clean and intuitive interface.</li>
+    </ul>
+    <div class="cs-img narrow"><img src="../assets/img/ta-mobile-app/sitemap-menu.png" alt="Sitemap of the Menu/Profile page grouping settings, promotions, support, tutorials and notifications" loading="lazy"></div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Dashboard</span>
+    <h2>Transforming the Dashboard for mobile usability</h2>
+
+    <h3>Adapting the Top Picks layout for mobile</h3>
+    <p>On web, the <em>Top Picks</em> section featured a split-view layout: a left column listing tickers with key price details and a right column displaying more in-depth insights like AI sentiment and popular contracts upon selection. Since this layout wouldn't translate well to a smaller screen, we <strong>redesigned it into a card-based format</strong> where each card provided key stock details at a glance. Tapping a card led users to the ticker page, maintaining the depth of information while improving usability on mobile.</p>
+    <div class="cs-img split">
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/top-picks-web.jpg" alt="Web Top Picks: ticker list on the left, sentiment and popular contracts on the right" loading="lazy">
+        <figcaption>Top picks - Web</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/top-picks-mobile.gif" alt="Animated mobile Top Picks: swiping through stock cards and tapping into a ticker" loading="lazy">
+        <figcaption>Top picks - mobile</figcaption>
+      </figure>
+    </div>
+
+    <h3>Making Stock Performance data more accessible</h3>
+    <p>The web version displayed stock performance data in a more expansive layout, allowing users to view multiple stocks at once. For mobile, we streamlined this by showing only five tickers upfront for quick scanning, with a “View More” option leading to a dedicated Stock Performance Summary page. This page features a <strong>side-scrolling table</strong> for easy navigation and a <strong>column selector</strong>, giving users control over the data they want to see.</p>
+    <div class="cs-img narrow">
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/performance-web.jpg" alt="Web Stocks Performance Summary table with many columns" loading="lazy">
+        <figcaption>Stock performance - web</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/performance-mobile.jpg" alt="Mobile: five tickers with View More, the side-scrolling summary table and the column selector" loading="lazy">
+        <figcaption>Stock performance - mobile</figcaption>
+      </figure>
+    </div>
+
+    <h3>Streamlining access to Trading Tools</h3>
+    <p>Trading tools are central to the user experience, so we ensured they were accessible with minimal taps. By integrating them directly into the bottom navigation and key touchpoints within the app, users could quickly access essential features without unnecessary friction.</p>
+    <div class="cs-img two mid">
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/tools-web.jpg" alt="Web sidebar with the Trading Tools submenu open" loading="lazy">
+        <figcaption>Trading tools menu - web</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/tools-mobile.jpg" alt="Mobile dashboard with the Trading Tools drawer open from the bottom navigation" loading="lazy">
+        <figcaption>Trading tools menu - mobile</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Ticker page</span>
+    <h2>Optimising the Ticker Page</h2>
+
+    <h3>Anchored navigation for quick access</h3>
+    <p>Navigating dense financial data on a mobile screen can be overwhelming, so we implemented anchored links to help users jump directly to key sections like Overview, Performance Summary, Financials, Sentiments, and News. This reduced the need for excessive scrolling and ensured users could quickly access the information they needed.</p>
+    <div class="cs-img"><img src="../assets/img/ta-mobile-app/ticker-anchors.jpg" alt="Four TSLA ticker page screens, each jumped to a different anchored section: Overview, Financials, Sentiments and News" loading="lazy"></div>
+
+    <h3>Expandable &amp; Interactive Charts</h3>
+    <p>To balance detail and readability, we designed charts with an expandable option - users could tap a CTA to view a full-screen version for deeper analysis. Additionally, we introduced <strong>pinch-to-zoom functionality</strong>, allowing users to interact with the data more intuitively and analyse trends with precision.</p>
+    <div class="cs-img two">
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/charts-expand.jpg" alt="Ticker chart with a View Full Chart button leading to the full-screen TradingView chart" loading="lazy">
+        <figcaption>Expandable charts</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img class="soft" src="../assets/img/ta-mobile-app/charts-pinch.png" alt="Price chart with two touch points marking a pinch to zoom between 250 and 260" loading="lazy">
+        <figcaption>Zoom using a two-finger pinch gesture</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Handoff</span>
+    <h2>Handoff to development</h2>
+    <p>With the designs finalised, I prepared Figma files with clear documentation, interaction specs, and organised Figma files to ensure efficient implementation.</p>
+
+    <h3>Structuring the Figma files for clarity</h3>
+    <p>To keep the handoff organised, I structured the Figma files by splitting features into different pages, ensuring that each section remained focused and easy to navigate for developers.</p>
+    <div class="cs-img two">
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/figma-pages.png" alt="Figma page list under Ready for Development: Dashboard, Ticker Page, Trading Tools, Profile and more" loading="lazy">
+        <figcaption>Each major feature had its dedicated page</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="../assets/img/ta-mobile-app/figma-subsections.jpg" alt="Figma canvas for Live Options split into labelled subsections of screens" loading="lazy">
+        <figcaption>Subsections for complex features</figcaption>
+      </figure>
+    </div>
+
+    <h3>Defining key interactions and gestures</h3>
+    <p>Since mobile trading tools rely heavily on interactivity, I detailed:</p>
+    <ul class="cs-list">
+      <li>Tap, swipe and pinch gestures</li>
+      <li>Transitions and microinteractions</li>
+    </ul>
+    <div class="cs-img two">
+      <img src="../assets/img/ta-mobile-app/spec-chart.jpg" alt="Interaction note: users can zoom in and out on the chart using a two-finger pinch gesture" loading="lazy">
+      <img src="../assets/img/ta-mobile-app/spec-gestures.png" alt="Interaction note for the Tools drawer: overlay moves up from the bottom and closes when tapping outside" loading="lazy">
+    </div>
+
+    <h3>Light &amp; dark mode variations</h3>
+    <p>To enhance usability in different environments, we designed both light and dark mode versions of the app.</p>
+    <ul class="cs-list">
+      <li>We applied a systematic approach where each UI element adapted smoothly between modes without affecting usability.</li>
+    </ul>
+    <div class="cs-img mid"><img src="../assets/img/ta-mobile-app/light-dark.gif" alt="Screen recording in Figma switching the dashboard between light and dark mode" loading="lazy"></div>
+    <ul class="cs-list">
+      <li>We also created separate Light Mode and Dark Mode Figma files for developer handoff</li>
+    </ul>
+    <div class="cs-img two">
+      <img class="soft" src="../assets/img/ta-mobile-app/figma-light.jpg" alt="Light Mode Figma file with the app screens laid out for handoff" loading="lazy">
+      <img class="soft" src="../assets/img/ta-mobile-app/figma-dark.jpg" alt="Dark Mode Figma file with the app screens laid out for handoff" loading="lazy">
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>Final thoughts</h2>
+    <p>The TradeAlgo mobile app is currently in development, and we’re now in the quality check phase, closely reviewing how the designs translate in the build and making final adjustments with the development team. I'm excited to see the app come to life so that our users can use it on the go!</p>
+  </section>
 
   <nav class="ed-next" aria-label="More work">
     <a href="../projects.html" data-back><span>Back to</span>All work</a>
