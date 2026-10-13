@@ -43,6 +43,8 @@ body.ed{
 /* images sit straight on the page: no boxes, no panels */
 .ed .cs-thumb{ border:0; border-radius:12px; padding:0; background:none; }
 .ed .cs-thumb img{ border-radius:12px; box-shadow:0 10px 30px rgba(19,26,61,.10), 0 2px 6px rgba(19,26,61,.06); }
+/* pairs of phone screens stay phone-sized */
+.ed .cs-img.two.mid{ max-width:560px; }
 .ed .cs-fig{ border:0; border-radius:0; background:none; overflow:visible; }
 .ed .cs-fig .cs-fig-img{ padding:0; }
 .ed .cs-fig figcaption{ background:none; border:0; padding:10px 0 0; text-align:center; }
