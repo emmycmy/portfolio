@@ -41,16 +41,107 @@
       <span class="yr">2024</span>
       <h1>Vama AI</h1>
       <p>Conceptualising the AI features of Vama, to enhance efficiency in messaging.</p>
+      <dl class="cs-meta">
+        <div><dt>Role</dt><dd>UI Designer</dd></div>
+        <div><dt>Responsibilities</dt><dd>Lofi wireframes, hifi mocks, prototyping</dd></div>
+        <div><dt>Date</dt><dd>May 2024</dd></div>
+      </dl>
     </div>
 
     <div class="ed-hero">
-      <img src="../assets/img/vama-ai.png" alt="Vama AI cover image">
+      <img src="../assets/img/vama-ai.png" alt="Vama AI on four iPhones: the AI home with Summarizer and Action Planner, a conversation summary and suggested actions">
     </div>
   </header>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's a preview of the project.
-  </div>
+  <section class="cs-section">
+    <h2>Introduction</h2>
+    <p>This case study focuses on the design of Vama AI, an intelligent assistant integrated into our chat platform to enhance productivity and streamline communication. The goal was to explore how AI could help users manage information overload and stay organised within the chat interface. As this was an <strong>early-stage concept,</strong> we focused on wireframes and high-fidelity designs to quickly visualise and communicate the core ideas.</p>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Wireframing</span>
+    <h2>Exploring ideas through wireframing</h2>
+    <p>Two key challenges - <strong>managing unread messages</strong> and <strong>improving message organisation</strong>, were identified by the product manager and our technical stakeholders as areas where AI could add the most value. Based on these priorities, I designed two AI-powered features: Quick message summaries and Suggested actions. Below is a breakdown of each problem, the proposed solution, and my initial low-fidelity design concepts.</p>
+
+    <div class="cs-issue">
+      <h3>Quick message summaries</h3>
+      <span class="yr issue">The problem</span>
+      <p>Users often face message overload, making it hard to keep up with important updates and conversations.</p>
+      <div class="cs-rec">
+        <span class="yr rec">The opportunity</span>
+        <p>By using AI to summarise unread messages, we can help users quickly catch up on key information, saving time and reducing cognitive load.</p>
+      </div>
+      <div class="cs-img"><img src="../assets/img/vama-ai/summarise-lofi.png" alt="Lofi wireframes of the unread message summariser: entry point, unread chat cards and a chat summary" loading="lazy"></div>
+    </div>
+
+    <div class="cs-issue">
+      <h3>Suggest actionable tasks</h3>
+      <span class="yr issue">The problem</span>
+      <p>Cluttered and lengthy chat threads make it difficult for users to keep track of key information and actionable items.</p>
+      <div class="cs-rec">
+        <span class="yr rec">The opportunity</span>
+        <p>By offering AI-powered "Suggested Actions", we can provide users with relevant tasks like categorising messages, setting reminders, or creating calendar events. This helps users stay organised and maintain a tidy conversation flow.</p>
+      </div>
+      <div class="cs-img"><img src="../assets/img/vama-ai/suggest-lofi.png" alt="Lofi wireframes of suggested actions: creating a group chat, a poll, a calendar reminder and a new group" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <span class="yr">Hi-fidelity</span>
+    <h2>From concepts to hi-fidelity mockups</h2>
+    <p>After several rounds of ideation, our stakeholders aligned on the initial wireframes, which gave us the green light to move into high-fidelity mockups. The designs below reflect early explorations of the two AI features discussed earlier. These are still in progress and subject to refinement as we continue to explore and validate ideas.</p>
+
+    <h3>Accessing Vama AI</h3>
+    <p>After some discussion, we decided on two ways to access Vama AI:</p>
+    <p><strong>1. Vama AI Icon:</strong> Users can click on the icon at the top of the screen to directly access the main Vama AI interface. This provides a quick and easy way to explore all AI features and options.</p>
+    <p><strong>2. Chat with Vama AI:</strong> Users can also initiate a chat with Vama AI. This allows them to quickly ask any question directly within the chat, providing instant assistance.</p>
+    <div class="cs-img narrow"><img src="../assets/img/vama-ai/access.jpg" alt="Two ways in: the Vama AI icon on the Chats screen opens the AI home, and Vama AI also appears as a chat" loading="lazy"></div>
+
+    <h3>The Summariser feature</h3>
+    <p>When the user clicks on the Summariser feature, a pop-up slides up from the bottom displaying a <strong>preview of all unread chats</strong>. This preview includes the group/profile avatar and name, the number of unread messages, and a snippet of the last message sent in each chat.</p>
+    <p>When the user clicks on any of these cards, the AI begins generating a summary of that chat. Once the summary is ready, the user can choose to mark the chat as read or go directly into the chat.</p>
+    <div class="cs-img three">
+      <img src="../assets/img/vama-ai/summariser-1.jpg" alt="Vama AI Summarizer pop-up previewing unread chats with avatars, unread counts and last messages" loading="lazy">
+      <img src="../assets/img/vama-ai/summariser-2.jpg" alt="Vama AI home with the Summarizer card selected" loading="lazy">
+      <img src="../assets/img/vama-ai/summariser-3.jpg" alt="Generated conversation summary for the BFT Bugis chat, with Mark as Read" loading="lazy">
+    </div>
+
+    <h3>Additional interactions following message summary</h3>
+    <p>I added new prompts to appear after the Conversation Summary is generated. These include features like <em>Chat Highlights</em> and <em>Key Contributors</em>.</p>
+    <p>Users can also <strong>continue chatting with Vama AI</strong> and ask questions if they wish.</p>
+    <div class="cs-img three">
+      <figure class="cs-shot">
+        <img src="../assets/img/vama-ai/highlights.jpg" alt="Chat Highlights sheet listing key messages from each member" loading="lazy">
+        <figcaption>Chat highlights</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="../assets/img/vama-ai/contributors.jpg" alt="Key Contributors sheet with a Send message link for each person" loading="lazy">
+        <figcaption>Key contributors</figcaption>
+      </figure>
+      <figure class="cs-shot">
+        <img src="../assets/img/vama-ai/ask.jpg" alt="Follow-up question to Vama AI about who signed up, with its answer" loading="lazy">
+        <figcaption>Ask Vama AI</figcaption>
+      </figure>
+    </div>
+
+    <h4 class="cs-subhead">Prototyping the Vama AI Summarizer</h4>
+    <div class="cs-img xs"><img src="../assets/img/vama-ai/summariser-prototype.gif" alt="Animated prototype: opening Vama AI from Chats, summarising unread messages and viewing the summary" loading="lazy"></div>
+
+    <h3>The "Action Planner" feature</h3>
+    <p>At the top of the Vama AI chat screen, users can slide along the carousel to select the "Vama AI Action Planner."</p>
+    <p>Once selected, a pop-up displays <strong>recommended actions</strong>, including <strong>calendar suggestions, group organisation, setting reminders</strong>, and more.</p>
+    <p>When users choose an action, tasks are automated with <strong>pre-filled text, dates, times, and contacts</strong>. For calendar suggestions, I designed it to open Google Calendar as we don't have a Vama Calendar yet.</p>
+    <div class="cs-img three">
+      <img src="../assets/img/vama-ai/planner-1.jpg" alt="Vama AI home with the Action Planner card" loading="lazy">
+      <img src="../assets/img/vama-ai/planner-2.jpg" alt="Action Planner pop-up with suggestions to add a calendar event, create a group and invite a contact" loading="lazy">
+      <img src="../assets/img/vama-ai/planner-3.jpg" alt="Google Calendar event pre-filled from the suggestion: Movie Night, Friday 24 May, with guests" loading="lazy">
+    </div>
+  </section>
+
+  <section class="cs-section">
+    <h2>What's next?</h2>
+    <p>This project was an opportunity to explore how AI can enhance productivity within a chat interface. Through rapid wireframing and high-fidelity design, we translated early feature ideas into tangible concepts that address real user pain points. While the designs are still evolving, they lay the groundwork for future iterations as we continue to refine the experience based on feedback and testing.</p>
+  </section>
 
   <nav class="ed-next" aria-label="More work">
     <a href="../projects.html" data-back><span>Back to</span>All work</a>
