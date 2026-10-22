@@ -41,16 +41,101 @@
       <span class="yr">2026</span>
       <h1>EnterpriseSG workflow builder</h1>
       <p>Designing a no/low-code digital workflow builder</p>
+      <dl class="cs-meta">
+        <div><dt>Role</dt><dd>Solo product designer</dd></div>
+        <div><dt>Client</dt><dd>Enterprise Singapore</dd></div>
+        <div><dt>Status</dt><dd>Early stage design</dd></div>
+        <div><dt>Date</dt><dd>Mar 2026 – present</dd></div>
+      </dl>
+      <p class="cs-fine">* Product name and assets replaced to protect internal product identity.</p>
     </div>
 
     <div class="ed-hero">
-      <img src="../assets/img/workflow-builder.png" alt="Workflow Builder cover image">
+      <img src="../assets/img/workflow-builder.png" alt="The workflow builder canvas with a five-node workflow and the node picker, set over the node library">
     </div>
   </header>
 
-  <div class="cs-soon">
-    <b>Full case study coming soon.</b> This project is on the list to be written up in detail — for now, here's a preview of the project.
-  </div>
+  <section class="cs-section">
+    <h2>Overview</h2>
+    <p class="cs-aside">A note on this case study: in this project, I take an inconsistent, vibe-coded product and systemised it, grounded in testing workshops rather than formal UX research methods.</p>
+    <p>This case study covers the design of Enterprise Singapore’s no/low-code workflow builder, from concept through to production.</p>
+
+    <div class="cs-issue">
+      <span class="yr issue">The problem</span>
+      <p>Processing officers at Enterprise Singapore were repeating the same manual data checks across cases (eg. re-keying figures, cross referencing documents by hand). The work was rule-based enough to automate, but out of reach without engineering support.</p>
+      <div class="cs-rec">
+        <span class="yr rec">Solution</span>
+        <p>A no/low-code workflow builder that allow officers to <strong>automate repetitive data tasks</strong> like extracting figures from documents or checking data against reference files.</p>
+      </div>
+    </div>
+
+    <h3>Approach</h3>
+    <p>We started from process mapping sessions with officers, then vibe-coded a first working version directly off those requirements rather than starting from wireframes to get something real in front of users fast. Further sessions and testing workshops with small teams shaped the design from there.</p>
+    <figure class="cs-shot cs-img">
+      <img class="soft" src="../assets/img/workflow-builder/vibe-coded-canvas.jpg" alt="Early vibe-coded builder: workflow list on the left, three nodes running on a dot-grid canvas, and the Upload Receipt config panel on the right" loading="lazy">
+      <figcaption>Early vibe-coded version of the canvas</figcaption>
+    </figure>
+    <p>As the sole designer, I owned the designs of the <strong>canvas editor, node system, and configuration panels,</strong> working closely with the PM and front-end developer, and building on the same MUI design system as Research Assistant to keep the two products consistent for officers moving between them.</p>
+  </section>
+
+  <section class="cs-section">
+    <h2>The canvas</h2>
+    <p>The canvas is the blank space officers build on — a dot-grid workspace with a floating action panel and a minimap preview panel for orienting on larger workflows</p>
+    <figure class="cs-shot cs-img mid">
+      <img class="soft" src="../assets/img/workflow-builder/canvas.jpg" alt="Empty dot-grid canvas with a floating toolbar at the bottom left and a minimap at the bottom right" loading="lazy">
+      <figcaption>The blank canvas — dot grid, floating action panel, and minimap preview</figcaption>
+    </figure>
+    <p>Watching officers build unguided surfaced a specific gap: <strong>mid-run, there was no way to tell what state a workflow was in without clicking into individual nodes</strong>. An officer would kick off a run and then have no reliable way to answer “is this still going, did it fail, or is it done?” from the canvas alone.</p>
+    <p>Most of the design work here went into solving that through <strong>connector states</strong> rather than through a separate status panel — keeping the answer on the canvas itself, next to the nodes it referred to. Connectors move through five states: idle, dragging, node selected, workflow running, and run complete.</p>
+    <figure class="cs-shot cs-img">
+      <img src="../assets/img/workflow-builder/connector-states.jpg" alt="Five connector states with stroke colour and width annotations: idle, dragging, node selected, workflow running and run complete" loading="lazy">
+      <figcaption>Connector states, annotated in Figma for handoff to the front-end dev</figcaption>
+    </figure>
+  </section>
+
+  <section class="cs-section">
+    <h2>Nodes</h2>
+    <p>The clearest sign that the vibe-coded product hadn’t been designed as a system was the nodes. For example, Input File was blue, Reference File was pink, and the two had <strong>different colours, card structures, and field layouts despite doing conceptually similar jobs.</strong></p>
+    <p>The inconsistency went beyond colour too. Across categories, <strong>different nodes surfaced different kinds of information and actions directly on the card</strong>, with no shared logic for what belonged on the canvas versus inside the config panel.</p>
+    <figure class="cs-shot cs-img">
+      <img src="../assets/img/workflow-builder/input-nodes-before.jpg" alt="Blue Input Text/File node beside a pink Reference File node, each with a different card layout" loading="lazy">
+      <figcaption>Vibe-coded input nodes; each with their own colour and card structure.</figcaption>
+    </figure>
+    <figure class="cs-shot cs-img">
+      <img src="../assets/img/workflow-builder/nodes-before.jpg" alt="Input, If/Else, User Compute, Display and ForEach Loop nodes, each with a different colour, size and set of actions" loading="lazy">
+      <figcaption>Vibe-coded nodes across categories with no shared pattern.</figcaption>
+    </figure>
+    <p>If every node looked and behaved differently, <strong>officers had to learn each one individually</strong> rather than transferring what they already knew, which worked against the point of a no-code tool built for <strong>people without technical backgrounds.</strong></p>
+    <p>I worked through the node library by category — <strong>input nodes first</strong> (upload files, reference files, web search), since those were what every workflow started with, then <strong>output nodes</strong> (display, email), then the more complex <strong>processing nodes</strong> (AI, Python, loop, if/else), where the underlying logic was hardest to hide. Data nodes are the next stage.</p>
+    <figure class="cs-shot cs-img">
+      <img src="../assets/img/workflow-builder/input-nodes-after.jpg" alt="Upload Files, Reference File and Web Search nodes in one teal style, shown across default, ready, running, success and failed states" loading="lazy">
+      <figcaption>Refreshed input nodes - same teal system and card layout</figcaption>
+    </figure>
+    <p><strong>Consistency was the focus from here on.</strong> I brought nodes within each category onto a shared visual system — one colour family per category, a common card layout, matching icon treatment, and the same state set (default, ready, running, success, failed). An officer who understood the Upload Files node could now read the Reference File one without re-learning it.</p>
+    <p>I applied the <strong>same approach across every category</strong>, so the node library reads as one system regardless of what a node does or how complex its underlying logic is in both light and dark mode.</p>
+    <figure class="cs-shot cs-img">
+      <img src="../assets/img/workflow-builder/node-library.jpg" alt="The full node library: input, processing and output categories across every state, in light mode and dark mode" loading="lazy">
+      <figcaption>Full node library across all states, light and dark mode.</figcaption>
+    </figure>
+  </section>
+
+  <section class="cs-section">
+    <h2>Configuration panels</h2>
+    <p>Configuration panels had the same problem as the nodes in the vibe-coded version — each one designed independently, with no shared pattern for field order, labelling, or how “view only” steps were communicated. <strong>Input File and Reference File, despite configuring near-identical things, looked and behaved like two unrelated tools.</strong></p>
+    <div class="cs-img sm">
+      <figure class="cs-shot">
+        <img src="../assets/img/workflow-builder/config-before.jpg" alt="Input Text/File and Reference File config panels side by side, with different field order and structure" loading="lazy">
+        <figcaption>Vibe-coded config panels — inconsistent field order and structure.</figcaption>
+      </figure>
+    </div>
+    <p>Beyond inconsistency, some config panels were <strong>simply too technical for a layman</strong> officer to use confidently — raw Python code blocks, JSON structure trees, model IDs, and interpolation syntax like {node_id} sat directly in the panel with no translation layer for someone without an engineering background.</p>
+    <div class="cs-img sm">
+      <figure class="cs-shot">
+        <img src="../assets/img/workflow-builder/config-technical.jpg" alt="AI Node and User Compute config panels showing a model ID, interpolation settings, a JSON tree and a Python code block" loading="lazy">
+        <figcaption>Vibe-coded AI and Python node config panels</figcaption>
+      </figure>
+    </div>
+  </section>
 
   <nav class="ed-next" aria-label="More work">
     <a href="../projects.html" data-back><span>Back to</span>All work</a>
