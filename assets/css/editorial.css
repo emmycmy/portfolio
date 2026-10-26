@@ -79,6 +79,7 @@ body.ed{
 /* row of headline numbers; three-up user needs */
 .ed .cs-stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin:32px 0 36px; padding:24px 0; border-top:1px solid var(--ed-line); border-bottom:1px solid var(--ed-line); }
 .ed .cs-stats b{ display:block; font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(32px,4vw,44px); line-height:1; margin-bottom:8px; }
+.ed .cs-stats.three{ grid-template-columns:repeat(3,1fr); }
 .ed .cs-stats span{ display:block; font-size:14px; line-height:1.45; color:var(--ed-sub); }
 .ed .cs-needs{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin:20px 0 32px; }
 .ed .cs-needs > div{ padding-top:16px; border-top:2px solid var(--z-ink); }
@@ -128,4 +129,11 @@ body.ed{
 
 /* a chip that labels a subsection (h3) sits with its heading, spaced from what came before */
 .ed .cs-section > .yr:not(:first-child){ margin-top:40px; }
+/* more air between an image and the subhead that follows it */
+.ed .cs-subhead.spaced{ margin-top:48px; }
+.ed .cs-subhead.lg{ font-size:20px; }
+/* a subhead one level down (e.g. under "Org-wide beta testing") */
+.ed .cs-subhead.sm{ font-size:15px; margin-top:28px; }
+/* neutral chip for steps (iterations), so coral stays for Context / Scope / Sources */
+.ed .yr.step{ background:#ebebf0; color:var(--z-ink); }
 .ed .cs-section > .yr + h3, .ed .cs-issue > .yr + h4{ margin-top:0; }
