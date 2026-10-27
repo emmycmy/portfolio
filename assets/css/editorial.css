@@ -112,3 +112,6 @@ body.ed{
   .ed-next a{ font-size:17px; }
   .ed-foot .ed-bar{ padding:20px 16px 40px; }
 }
+
+/* a section split into several h2-level parts (e.g. Ingenico's design walkthrough) */
+.ed .cs-section.multi > h2:not(:first-of-type){ margin-top:64px; }
