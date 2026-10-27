@@ -15,10 +15,8 @@
     'ta-mobile-app': 'TA mobile app',
     'vama-meetings': 'Vama Meetings',
     'vama-ai': 'Vama AI',
-    'lagun-sari': 'Lagun Sari web design',
     'ingenico': 'Ingenico merchant app',
     'antlabs': 'ANTlabs dashboard',
-    'era': 'ERA listing portal',
     'wicked-wallop': 'The Wicked Wallop'
   };
   var page = from.pathname.replace(/\.html$/, '').replace(/\/$/, '/index');
