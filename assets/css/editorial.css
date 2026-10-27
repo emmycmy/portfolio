@@ -137,3 +137,5 @@ body.ed{
 /* neutral chip for steps (iterations), so coral stays for Context / Scope / Sources */
 .ed .yr.step{ background:#ebebf0; color:var(--z-ink); }
 .ed .cs-section > .yr + h3, .ed .cs-issue > .yr + h4{ margin-top:0; }
+/* a section split into several h2-level parts (e.g. Ingenico's design walkthrough) */
+.ed .cs-section.multi > h2:not(:first-of-type){ margin-top:64px; }
