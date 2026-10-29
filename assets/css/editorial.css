@@ -73,6 +73,17 @@ body.ed{
 .ed .cs-refs + *{ margin-top:0; }
 .ed .cs-refs{ gap:40px; }
 
+/* header fine print (e.g. "assets replaced" disclaimers) */
+.ed .cs-hero p.cs-fine{ margin:18px 0 0; font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--ed-sub); letter-spacing:.02em; }
+
+/* row of headline numbers; three-up user needs */
+.ed .cs-stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin:32px 0 36px; padding:24px 0; border-top:1px solid var(--ed-line); border-bottom:1px solid var(--ed-line); }
+.ed .cs-stats b{ display:block; font-family:'Bricolage Grotesque',sans-serif; font-weight:800; font-size:clamp(32px,4vw,44px); line-height:1; margin-bottom:8px; }
+.ed .cs-stats.three{ grid-template-columns:repeat(3,1fr); }
+.ed .cs-stats span{ display:block; font-size:14px; line-height:1.45; color:var(--ed-sub); }
+.ed .cs-needs{ display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin:20px 0 32px; }
+.ed .cs-section .cs-needs p{ font-size:15px; margin:0; }
+
 .ed .cs-links a{ border-width:1px; }
 .ed .cs-soon{ border:1px dashed #c9c9d3; margin-top:40px; }
 
@@ -102,6 +113,8 @@ body.ed{
 @media (max-width:680px){
   .ed .cs-img.split-rev{ grid-template-columns:1fr; }
   .ed .cs-img.three{ grid-template-columns:1fr; max-width:300px; }
+  .ed .cs-stats{ grid-template-columns:1fr 1fr; }
+  .ed .cs-needs{ grid-template-columns:1fr; gap:20px; }
   .ed-wrap{ padding:0 16px; }
   .ed-nav .ed-bar{ padding:16px; }
   .ed-head{ padding-top:32px; padding-bottom:36px; }
@@ -113,5 +126,26 @@ body.ed{
   .ed-foot .ed-bar{ padding:20px 16px 40px; }
 }
 
+/* a chip that labels a subsection (h3) sits with its heading, spaced from what came before */
+.ed .cs-section > .yr:not(:first-child){ margin-top:40px; }
+/* more air between an image and the subhead that follows it */
+.ed .cs-subhead.spaced{ margin-top:48px; }
+.ed .cs-subhead.lg{ font-size:20px; }
+/* two config panels shown at the same panel width as the four-panel row above */
+.ed .cs-img.panel-pair{ max-width:392px; }
+/* a subhead one level down (e.g. under "Org-wide beta testing") */
+.ed .cs-subhead.sm{ font-size:15px; margin-top:28px; }
+/* neutral chip for steps (iterations), so coral stays for Context / Scope / Sources */
+.ed .yr.step{ background:#ebebf0; color:var(--z-ink); }
+/* blue chip for themes that aren't problems (Research Assistant's Context / Scope / Sources), where coral would read as an error */
+.ed .yr.theme{ background:var(--z-bg); color:#fff; }
+.ed .cs-section > .yr + h3, .ed .cs-issue > .yr + h4{ margin-top:0; }
 /* a section split into several h2-level parts (e.g. Ingenico's design walkthrough) */
 .ed .cs-section.multi > h2:not(:first-of-type){ margin-top:64px; }
+/* phase timeline headings (Research Assistant) read at section-heading size */
+.ed .cs-issue.phase h3{ font-size:clamp(24px,3vw,32px); line-height:1.08; }
+/* a features walkthrough: more air between features so captions stay with their image */
+/* (the first chip keeps the default 40px so it reads as part of the intro) */
+.ed .cs-section.features > .yr ~ .yr{ margin-top:72px; }
+.ed .cs-section.features > .cs-shot + .cs-subhead{ margin-top:56px; }
+.ed .cs-section.features > .cs-shot + .cs-shot{ margin-top:48px; }
