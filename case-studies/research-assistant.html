@@ -51,7 +51,7 @@
     </div>
 
     <div class="ed-hero">
-      <img src="../assets/img/research-assistant.png" alt="Two angled laptops: the Research Assistant chat home behind, and the Skills library with a skill detail drawer in front">
+      <img src="../assets/img/research-assistant.png" alt="Two angled laptops: the Research Assistant chat home greeting the officer behind, and the Skills library with a skill detail drawer in front">
     </div>
   </header>
 
@@ -67,7 +67,7 @@
     <h2>From chatbot to research platform</h2>
     <p>The product went through three distinct phases, <strong>each shaped by what we learned from the one before</strong>.</p>
 
-    <div class="cs-issue">
+    <div class="cs-issue phase">
       <span class="yr">Phase 01 · Concept and research</span>
       <h3>Touchpoints AI</h3>
       <p>A chatbot embedded in the “Past Touchpoints” section of a company page in EnterpriseSG’s data platform. <strong>Scoped entirely to that company’s engagement history</strong>, it let officers ask about past interactions (eg. call reports, past meetings) without leaving their current view.</p>
@@ -79,7 +79,7 @@
       <p>Implication: the assistant had to bring internal data and web research together in one place.</p>
     </div>
 
-    <div class="cs-issue">
+    <div class="cs-issue phase">
       <span class="yr">Phase 02 · Beta</span>
       <h3>Sidebar + Full page chat</h3>
       <p>I designed two surfaces in parallel: a <strong>sidebar chatbot</strong> for company-specific queries, embedded in the existing platform, and a standalone <strong>full-page chat</strong> for broader research across companies and sectors.</p>
@@ -89,7 +89,7 @@
           <figcaption>Sidebar chat</figcaption>
         </figure>
         <figure class="cs-shot">
-          <img class="soft" src="../assets/img/research-assistant/full-page-chat.jpg" alt="Full-page Research Assistant chat with suggested prompts under the input" loading="lazy">
+          <img class="soft" src="../assets/img/research-assistant/full-page-chat.jpg" alt="Full-page Research Assistant chat greeting the officer by name, with suggested prompts under the input" loading="lazy">
           <figcaption>Full-page chat</figcaption>
         </figure>
       </div>
@@ -104,45 +104,44 @@
       <p>Officers struggled to discover the sidebar and preferred the full-page chat for everything. <strong>We decommissioned the sidebar.</strong></p>
       <p class="cs-aside">Insight: officers weren’t just reviewing one company. They were synthesising across companies, sectors and sources, and wanted one surface to do it all.</p>
 
-      <h4 class="cs-subhead sm">Top issues identified</h4>
+      <h4 class="cs-subhead lg">Top issues identified</h4>
       <p>As a user,</p>
       <div class="cs-needs">
         <div>
-          <span class="yr issue">Context</span>
+          <span class="yr theme">Context</span>
           <p>I want the agent to <strong>understand our context</strong>, like sector resolution, brief format and writing style.</p>
         </div>
         <div>
-          <span class="yr issue">Scope</span>
+          <span class="yr theme">Scope</span>
           <p>I want my queries <strong>grounded in a specific company</strong>, without restating it in every prompt.</p>
         </div>
         <div>
-          <span class="yr issue">Sources</span>
+          <span class="yr theme">Sources</span>
           <p>I want to see the <strong>web sources</strong> consulted, and open the underlying call reports <strong>without leaving the interface</strong>.</p>
         </div>
       </div>
     </div>
 
-    <div class="cs-issue">
+    <div class="cs-issue phase">
       <span class="yr">Phase 03 · Current</span>
       <h3>Agentic research platform</h3>
       <p>Those findings reshaped the product. Rather than asking a question and receiving an answer, officers now brief the agent: <strong>setting scope, activating skills</strong>, and <strong>letting the agent plan, query, synthesise and evaluate on its own</strong> before responding. The officer delegates; the agent handles the research workflow.</p>
       <p class="cs-aside">Insight: access to information wasn’t the bottleneck. Officers needed to be able to shape how the agent worked, not just what it searched.</p>
-      <div class="cs-img"><img src="../assets/img/research-assistant/agentic.jpg" alt="Skills library with a skill detail drawer, overlapped by the chat with 4 companies and 3 skills active and the Add companies to context drawer open" loading="lazy"></div>
     </div>
   </section>
 
-  <section class="cs-section">
+  <section class="cs-section features">
     <h2>Key features</h2>
     <p>The beta findings shaped the 13 features that followed. Here are some of the key ones, the problem each solved and the decisions behind them.</p>
 
-    <span class="yr issue">Context</span>
+    <span class="yr theme">Context</span>
     <h3>Skills and prompt enhancement</h3>
     <p>Beta feedback made it clear that officers weren’t struggling to access information. They struggled to ask for it in a way that produced useful results. <strong>Different officers expected different formats, tone and depth</strong>, and the agent had no way to account for that by default. I designed two features that tackle this at different points.</p>
 
     <h4 class="cs-subhead">1. Skills</h4>
     <p>Skills are <strong>small, reusable instruction bundles</strong> that <strong>teach the agent how to execute a specific task consistently</strong>. For example, an officer activating the “Sector Landscape Summary” skill gets a structured overview of market size, key players and trends, without spelling any of that out in every prompt.</p>
     <p>The challenge was making skills feel lightweight and within reach, not like a settings menu buried in a corner. <strong>The skills bar sits directly beneath the input</strong>, always visible. A manage link opens the library, where a drawer lets officers preview a skill while keeping the list in view.</p>
-    <figure class="cs-shot cs-img mid">
+    <figure class="cs-shot cs-img mid mid-sm">
       <img src="../assets/img/research-assistant/skills-bar.png" alt="Three states of the skills bar under the input: skills off, no skills active, and two skills active plus 2 more" loading="lazy">
       <figcaption>Skills bar within input box</figcaption>
     </figure>
@@ -159,7 +158,7 @@
       <figcaption>Enhance button state progression: empty → below-threshold → ready → streaming → complete → error</figcaption>
     </figure>
 
-    <span class="yr issue">Scope</span>
+    <span class="yr theme">Scope</span>
     <h3>Company scoping</h3>
     <p>Officers needed a way to point queries at specific companies without breaking the flow of starting a conversation. Early versions treated scope as a single-company toggle, but feedback made it clear that scope had to <strong>support multiple companies</strong>.</p>
     <p><strong>Key constraint:</strong> scope had to be set before the first message. Changing it mid-session would invalidate the conversation context, so the <strong>entry point had to be clear</strong>, and the locked state had to explain itself rather than surface as an error.</p>
@@ -204,10 +203,13 @@
         <figcaption>Config line below input as a single compact strip</figcaption>
       </figure>
       <p>Clicking Edit opens a <strong>right-side drawer</strong> where scoped companies appear as chips, and officers can search to add or remove them. <strong>Changes are staged before they’re applied</strong>, so half-finished edits never take effect. Once confirmed, the config line and input placeholder update to match.</p>
-      <div class="cs-img"><img class="soft" src="../assets/img/research-assistant/editing-companies.jpg" alt="Chat with the Add companies to context drawer open in edit mode, showing selected companies as chips" loading="lazy"></div>
+      <figure class="cs-shot cs-img">
+        <img class="soft" src="../assets/img/research-assistant/editing-companies.jpg" alt="Chat scoped to 3 companies with the Edit companies in scope drawer open: selected companies as removable chips, a search for lorem with 2 results, and an Update scope button" loading="lazy">
+        <figcaption>Edit drawer; search to add or remove companies, then apply with Update scope</figcaption>
+      </figure>
     </div>
 
-    <span class="yr issue">Sources</span>
+    <span class="yr theme">Sources</span>
     <h3>Source attribution</h3>
     <p>From the earliest interviews, <strong>trust was the central concern</strong>: officers wanted to know how a response was reached and where it came from before relying on it. So source attribution had to be visible at every stage of the research, not just appended to a finished answer. Two components carry this across the product.</p>
 
@@ -237,7 +239,7 @@
     </div>
 
     <h3>What’s next</h3>
-    <p>I’m now designing the next release, including a <strong>skills library</strong> and <strong>secure file upload</strong>, and using live usage data to decide what to prioritise after that.</p>
+    <p>I’m now designing the next release, including a <strong>skills library</strong> and <strong>secure file upload</strong>. Alongside that, we’re in the midst of <strong>surveying officers</strong> on how they use the assistant day to day: which tasks they bring to it, where its answers fall short, and what would make it a regular part of their workflow. Their responses will shape the roadmap beyond this release.</p>
   </section>
 
   <nav class="ed-next" aria-label="More work">
