@@ -133,6 +133,8 @@ body.ed{
 .ed .cs-subhead.lg{ font-size:20px; }
 /* two config panels shown at the same panel width as the four-panel row above */
 .ed .cs-img.panel-pair{ max-width:392px; }
+/* close-up of two nodes, shrunk so its nodes match the full-width node row below (title text 319px of 1640 vs 101px of 1289) */
+.ed .cs-img.nodes-match img{ width:40%; justify-self:center; }
 /* a subhead one level down (e.g. under "Org-wide beta testing") */
 .ed .cs-subhead.sm{ font-size:15px; margin-top:28px; }
 /* neutral chip for steps (iterations), so coral stays for Context / Scope / Sources */
